@@ -1,0 +1,125 @@
+<!-- This Apple Help template put together by Andy Matuschak
+	http://www.andymatuschak.org
+	andy@andymatuschak.org
+	Version 1.0
+	
+	Adapted from the Safari help book--thanks, Apple!
+	Adapted more directly from Pixen's help book.
+	Licensed under MIT. -->
+	
+<!-- This page differs from the basicPageTemplate in that it gives step-by-step
+	instructions on how to complete a given task. These are great for the users,
+	especially if the steps are presented in a bite-sized fashion. Try to use
+	these more than the basic template. -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/sgml/loosedtd.html">
+<html>
+	<head>
+		<title>Gawker Basics</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Gawker, Camera, iSight, Basics, Intro">
+		<meta name="description" content="Gawker Basics.">
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+		<div id="banner">
+			<div id="machelp">
+				<a name="Basics"></a>
+				<!-- Specify a category in the anchor above; then you can
+					link to listings of every topic in a given category. -->
+				<a class="bread" href="help:anchor='access' bookID=Gawker Help">Gawker Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../gfx/icon.png" alt="Gawker Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Gawker Basics</h1>
+			</div>
+				<p>
+				Thank you for your interest in Gawker!  Hopefully you will find it useful and easy to use.  This page will
+				explain the basics of Gawker.
+				</p>
+				<!-- Try to keep this text short on a task page. -->
+
+				<p style="text-align: center;">
+					<img src="../gfx/mainWindow.png" alt="Gawker Main Window" />
+				</p>
+				
+				<p>
+				Let's cover each of the elements of the Main Window.  Gawker is built around the idea of cameras.  
+				Each camera currently available is represented as a row in the camera list.
+				The Gear button reflects the "Camera" menu in the menu bar and is used to perform actions on the selected camera(s).  
+				The "Internet Connect" field is used to connect to remote cameras by entering in their hostname or IP address 
+				and the pull-down keeps a history of recent connection attempts.
+				</p>
+				
+				<p><b>Camera List</b><br>
+				The camera list has a row for each available camera that can be viewed.  A camera is simply an image source
+				whose images you can record into a movie or just watch and can be your own iSight, DV Camera, 
+				USB Webcam (supported by <a href="http://webcam-osx.sourceforge.net/">macam</a>), Desktop,
+				a camera you've connected to remotely, or a combination of any of these.  If you have a camera that is physically 
+				hooked up to you computer, it will appear at the top of your camera list.  Cameras connected while Gawker is running will be
+				automatically detected and added to the camera list. Other cameras will appear if you have connected to an Internet Camera or if
+				Bonjour Cameras are nearby.	<br>
+				<br>
+				Each camera can be in either an enabled or disabled state. This can be changed
+				by clicking the circular button on the far right of that camera row or by selecting it and using the "Enable Camera"
+				item under the Camera/Gear menu.<br>
+				<br>
+<!--				If a camera is disabled, the image on the left
+				will be an icon showing the camera's type and and the circular button on the right will be a magnifying glass that can be clicked to enable it.  If a camera
+				is enabled, the image to the left will show a thumbnail of the most recent image from that camera and the circular
+				button on the right will be an "X" that can be clicked to disable it. -->
+				When a camera is enabled, you can open it by double-clicking on its row or by selecting it and using the "Open Camera"
+				item under the Camera/Gear menu.  This will open the window for that camera, showing the current image for the camera and
+				allowing you to record the cameras images into a movie. Opening and closing the window does not change the camera's
+				state. If you try and open a camera that is disabled, Gawker will ask if you would like to enable it.
+				</p>
+				
+				<p><b>Gear Menu/Camera Menu</b><br>
+				The Gear Menu on the main window and Camera Menu in the title bar are actually the same menu, you can just access it two different ways.</p>
+					<p style="text-align: center;">
+					<img src="../gfx/gearMenu.png" alt="Camera Menu" />
+				</p>
+				<p>
+				Only items that are relevant to the camera(s) selected in the camera list will be activated.
+				
+				<div summary="Action availability" id="taskbox">
+					<p>
+						<strong>Menu item availability</strong>
+						<ul>
+							<li>The "More Options..." item will always be available and is explained in detail in 
+								<a href="optionspage.html">More Camera Options in Gawker</a>.</li>
+							<li>"Combine" will only be available if	multiple cameras are highlighted in the Camera List.  This item is 
+								explained fully in <a href="combinepage.html">Using Gawker to Combine Cameras</a>.
+							<li>"Remove" removes a camera from the list and will only be available if the selected camera 
+								is an Internet Camera or Combined Camera.</li>
+							<li>"Clear 'Connect To' History" is always available and is used to clear the history from the 
+								"Connect To" pull-down.</li>
+						</ul>
+					</p>
+				</div>
+
+				<p><strong>Connect To Field</strong><br>
+				If someone you know has shared a camera using Gawker, you can type in their hostname or IP address into the
+				Connect To field and hit Return to connect to their camera and add it to the camera list.  
+				Once it is added, it can be enabled and disabled, viewed and recorded.  It can
+				be removed using the "Remove" item under the Gear/Camera Menu.
+				</p>
+
+				<h2 class="seealso">See also</h2>
+				<p class="seealso">
+					<a href="recordpage.html">Using Gawker to Record a Movie</a><br />
+					<a href="optionspage.html">Camera Options in Gawker</a><br />
+					<a href="sharepage.html">Using Gawker to Share your Camera</a><br />
+					<a href="combinepage.html">Using Gawker to Combine Cameras</a><br />
+				</p>
+			</div>
+		</body>
+		</html>

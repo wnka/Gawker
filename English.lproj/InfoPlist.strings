@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Gawker";
+NSHumanReadableCopyright = "Phil Piwonka 2006, licensed under the GPL";

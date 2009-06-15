@@ -1,0 +1,168 @@
+<!-- This Apple Help template put together by Andy Matuschak
+	http://www.andymatuschak.org
+	andy@andymatuschak.org
+	Version 1.0
+	
+	Adapted from the Safari help book--thanks, Apple!
+	Adapted more directly from Pixen's help book.
+	Licensed under MIT. -->
+	
+<!-- This page differs from the basicPageTemplate in that it gives step-by-step
+	instructions on how to complete a given task. These are great for the users,
+	especially if the steps are presented in a bite-sized fashion. Try to use
+	these more than the basic template. -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/sgml/loosedtd.html">
+<html>
+	<head>
+		<title>Using Gawker to Share your Camera</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Share, Camera, Internet, Bonjour, Network, Sharing">
+		<meta name="description" content="Learn how to Share your Camera.">
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+		<div id="banner">
+			<div id="machelp">
+				<a name="sharing"></a>
+				<!-- Specify a category in the anchor above; then you can
+					link to listings of every topic in a given category. -->
+				<a class="bread" href="help:anchor='access' bookID=Gawker Help">Gawker Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../gfx/icon.png" alt="Gawker Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Using Gawker to Share your Camera</h1>
+			</div>
+				<p>
+				Gawker allows you to share your iSight camera with others over the internet.  People can view and record time-lapse
+				movies of whatever it is you want to share with them. If you're interested in sharing your camera, this guide
+				will show you how.  Let's get started...<br>
+				<br>
+				Select your iSight camera in the camera list and choose "More Options..." from the Gear/Camera Menu and select the "Share" tab.  From this window
+				you can set how exactly you want your camera to be shared.
+				</p>
+				<!-- Try to keep this text short on a task page. -->
+
+				<p style="text-align: center;">
+					<img src="../gfx/shareOptions.png" alt="Gawker Share Options" />
+					<!-- Try to have screenshots on as many pages as you can. -->
+				</p>
+				
+				<div summary="How to configure sharing" id="taskbox">
+					<p>
+						<strong>To configure Sharing:</strong>
+						<ol>
+							<li>Set the "Broadcast Interval" to set how often a new image from your iSight will be sent out to 
+								remote users.</li>
+							<li>Choose "Enable Bonjour" if you would like users on your immediate network to instantly see your 
+								shared camera in their camera list.  Click <a href="http://www.apple.com/macosx/features/bonjour">
+								here</a> for an introduction to Bonjour.</li>
+							<li>Choose "Require password to connect" if you would like to restrict access to those that can view your
+							    camera to those that know the password.  To the right of this checkbox is where you specify the password
+								users will have to know.  This field is ignored if the checkbox is not checked.
+							<li>Choose "Limit number of simultaneous users" if you would like to limit the number of remote users that
+								can connect to your camera at a given time.  To the right of this checkbox is where you specify the
+								maximum connections.  This field is ignored if the checkbox is not checked. </li>
+							<li>Choose a "Port to use for Sharing".  There is no need to change this unless you have a need to.
+								If you don't know what this means, leave it alone.</li>
+						</ol>
+					</p>
+				</div>
+
+				<p>
+				These settings are saved between Gawker sessions so you will only need to revisit these if you want to change how your shared camera is configured.  
+				Once these options are all set how you want, click "Start" to begin sharing your camera.  The "Share" tab will now change to show you sharing stats.
+				</p>
+				
+				<p style="text-align: center;">
+					<img src="../gfx/sharingOn.png" alt="Gawker Share Options" />
+					<!-- Try to have screenshots on as many pages as you can. -->
+				</p>
+				
+				<p>
+				Once Sharing is On, the Status area will show you when you started sharing, how internet users can connect to your camera, and a list
+				of IP Addresses of those currently connected to you camera.  
+				If you are not connected to the internet, the field stating "Internet users can view this camera..." will not be shown.  This field
+				shows your IP address on the Internet and if your firewalls are configured properly is what other Gawker users will use to connect to
+				your camera.<br>
+				<br>
+				You will notice that your camera's subtitle in the camera list 
+				will now read "My Shared iSight" or something similar depending on what kind of camera you are using.  This subtitle will be followed
+				by a number in brackets that tells you how many people are connected to your camera and if you chose
+				to limit the number of incoming connections the number of maximum connections is shown as well.  So if you limited your
+				camera to 10 connections, you would see "My Shared iSight [0/10]" as the subtitle.
+				</p>
+				
+				<p>
+				If you chose to "Enable Bonjour" in the "Share" tab, you may see your shared camera show up in your
+				camera list with a "Bonjour" subtitle.  This is because Gawker is looking for cameras that are published using Bonjour
+				and since your camera just became available, it shows up in your camera list.  You can prevent Gawker from looking for
+				Bonjour cameras in the Preferences panel.
+				</p>
+				
+				<p>
+				Once your camera is being shared, you can return to the "Share" tab and change options as you wish.
+				Options change on-the-fly so you can adjust properties without disconnecting current users.
+				</p>
+	
+				<p>
+				This is all the setup that is required inside of Gawker to share your camera.  Depending on your networking setup,
+				you may have to change firewall and router settings to allow outside users to access your camera.  If the Mac OS X
+				firewall is enabled, you will need to allow access for the port the camera is shared on.  This port can be found in
+				the "Share" tab when sharing is stopped.
+				</p>
+				
+				<div summary="How to open a port on your firewall" id="taskbox">
+					<p>
+						<strong>Opening a port on the Mac OS X firewall:</strong>
+						<ol>
+							<li>Under the Apple menu in the upper left corner of your screen, select "System Preferences..."</li>
+							<li>In the System Preferences window, select "Sharing."</li>
+							<li>In the Sharing screen, select the "Firewall" tab.</li>
+							<li>Click "New..."</li>
+							<li>Under "Port Name:" select "Other"</li>
+							<li>For "TCP Port Number(s)" enter the port number from the Share Options screen in Gawker.  
+							The default is 7548.</li>
+							<li>Enter that same number for the "UDP Port Number(s)"</li>
+							<li>Enter "Gawker" for the description (description can be anything)</li>
+							<li>Click OK.</li>
+						</ol>
+					</p>
+				</div>
+				
+				<p>
+				This takes care of the Mac OS X firewall.  Now you will need to configure port forwarding on your router if necessary.
+				How to do this varies from router to router, so check the manual for your router.  If you do not have a router and the 
+				computer that has the shared iSight is connected directly to the cable modem/DSL modem/etc, you shouldn't need to
+				do anything.  Otherwise, you will have to redirect
+				all traffic the router gets for port 7548 (or whatever port you chose) to the computer that has the shared 
+				iSight connected to it.  For an excellent explanation of port forwarding, 
+				click <a href="http://www.portforward.com/help/pfprogression.htm">here</a> for an article on 
+				<a href="http://www.portforward.com">portforward.com</a>.  Click <a href="http://www.exploitmymac.com/portmapping/index.html">here</a>
+				for an explanation of port forwarding on Apple Airport routers on <a href="http://www.exploitmymac.com">exploitmymac.com</a>.
+				</p>
+	
+				<p>
+				When all this is completed, you can test your shared camera by typing your Internet IP address from the 
+				"Share" screen into the "Connect To" field on the Main Window.  If the connection succeeds, you are 
+				ready to go!  Tell your friends!  If it doesn't succeed, double check your firewall and router settings.
+				</p>
+	
+				<h2 class="seealso">See also</h2>
+				<p class="seealso">
+					<a href="basicspage.html">Gawker Basics</a><br />
+					<a href="recordpage.html">Using Gawker to Record a Movie</a><br />
+					<a href="optionspage.html">Camera Options in Gawker</a><br />
+					<a href="combinepage.html">Using Gawker to Combine Cameras</a><br />
+				</p>
+			</div>
+		</body>
+		</html>

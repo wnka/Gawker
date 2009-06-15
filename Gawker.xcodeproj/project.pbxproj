@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		ED00CEEF08E6067900A00DFE /* InternetComboBox.m in Sources */ = {isa = PBXBuildFile; fileRef = ED00CEEE08E6067900A00DFE /* InternetComboBox.m */; };
+		ED0D96A70A14C1E0001FC6CF /* CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D96A60A14C1E0001FC6CF /* CameraManager.m */; };
+		ED0F5A4F092844EB00BF1A41 /* BonjourImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0F5A4E092844EB00BF1A41 /* BonjourImageSource.m */; };
+		ED1066E00A15947A0035B803 /* CombinedCameraScreenComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1066DF0A15947A0035B803 /* CombinedCameraScreenComponent.m */; };
+		ED1067150A15A2010035B803 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1067020A15A2010035B803 /* OpenGL.framework */; };
+		ED13DBB109C1444E0001E12C /* window_nib.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ED13DBB009C1444E0001E12C /* window_nib.tiff */; };
+		ED13DBC109C148860001E12C /* desktop.png in Resources */ = {isa = PBXBuildFile; fileRef = ED13DBC009C148860001E12C /* desktop.png */; };
+		ED177EA70960AF7200E0B070 /* SharePreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED177EA60960AF7200E0B070 /* SharePreferenceController.m */; };
+		ED1A218109A55E4900746CE6 /* CombinedCameraLocalComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1A218009A55E4900746CE6 /* CombinedCameraLocalComponent.m */; };
+		ED1A218709A5619A00746CE6 /* CombinedCameraNetworkComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1A218609A5619A00746CE6 /* CombinedCameraNetworkComponent.m */; };
+		ED24446E098B3589007DC3A9 /* NetworkCamera.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED244467098B3589007DC3A9 /* NetworkCamera.nib */; };
+		ED244471098B359B007DC3A9 /* NetworkCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = ED244470098B359B007DC3A9 /* NetworkCamera.m */; };
+		ED36BC8308C02105007D1B2D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED36BC8208C02105007D1B2D /* IOKit.framework */; };
+		ED371FB30990885A004E9636 /* AboutPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED371FAD0990885A004E9636 /* AboutPanel.nib */; };
+		ED3C05E008A460F00014BA5B /* CombinedCamera.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED3C05DE08A460F00014BA5B /* CombinedCamera.nib */; };
+		ED448D450A3D256600FF445F /* ImageTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED448D440A3D256600FF445F /* ImageTransitionView.m */; };
+		ED448D910A3D2CE300FF445F /* CameraStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED448D900A3D2CE300FF445F /* CameraStatusView.m */; };
+		ED4D2EF308FB5E4300DC6806 /* NetworkCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4D2EF208FB5E4300DC6806 /* NetworkCameraController.m */; };
+		ED4D410A0A3E5AEC00477560 /* error.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ED4D41090A3E5AEC00477560 /* error.tiff */; };
+		ED4D410C0A3E5AFF00477560 /* camera.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ED4D410B0A3E5AFF00477560 /* camera.tiff */; };
+		ED4D80E508765BF700212693 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4D80E408765BF700212693 /* QTKit.framework */; };
+		ED58F601089D1E99000352F7 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ED58F5FF089D1E99000352F7 /* AsyncSocket.m */; };
+		ED5C98F7087636FF003C1476 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5C98F6087636FF003C1476 /* QuickTime.framework */; };
+		ED66EBCE08C2213400BD48B7 /* FireWireNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = ED66EBCD08C2213400BD48B7 /* FireWireNotifier.m */; };
+		ED6CA2D309146C4800A9BEAC /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6CA2D209146C4800A9BEAC /* Carbon.framework */; };
+		ED7310AC08E4EEE5002E3A09 /* disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7310AB08E4EEE5002E3A09 /* disconnect.png */; };
+		ED76099608E54AE100F4660E /* bonjour.png in Resources */ = {isa = PBXBuildFile; fileRef = ED76099508E54AE100F4660E /* bonjour.png */; };
+		ED783AB2098B3BEC00F83D30 /* SharePreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED783AAC098B3BEC00F83D30 /* SharePreferences.nib */; };
+		ED783AB5098B3C7B00F83D30 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED783AB4098B3C7B00F83D30 /* License.txt */; };
+		ED7B8B720988A1EE00AD619C /* ViewTransitioner.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B8B710988A1EE00AD619C /* ViewTransitioner.m */; };
+		ED87D1F009986B14002E8BBE /* USBNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87D1EF09986B14002E8BBE /* USBNotifier.m */; };
+		ED88BDDA092F24B30077449A /* BonjourCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED88BDD9092F24B30077449A /* BonjourCameraController.m */; };
+		ED8ED43A08A060D8009085AA /* LapseMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED43908A060D8009085AA /* LapseMovie.m */; };
+		ED918AD70A3FC32000C2194A /* CameraStatusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED918AD60A3FC32000C2194A /* CameraStatusButton.m */; };
+		ED918B400A3FC96000C2194A /* CameraStatusButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED918B3F0A3FC96000C2194A /* CameraStatusButtonCell.m */; };
+		ED984B180A378372003B6602 /* CameraFeatures.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED984B160A378372003B6602 /* CameraFeatures.nib */; };
+		ED984B900A37AEEF003B6602 /* CameraFeaturesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED984B8F0A37AEEF003B6602 /* CameraFeaturesWindowController.m */; };
+		ED98B38008F8FCBD0047EA9F /* CameraImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98B37F08F8FCBD0047EA9F /* CameraImageSource.m */; };
+		ED98B3AA08F902FA0047EA9F /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98B3A908F902FA0047EA9F /* CameraController.m */; };
+		ED98B3AE08F907470047EA9F /* LocalCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98B3AD08F907470047EA9F /* LocalCameraController.m */; };
+		ED98B81808F9BDA00047EA9F /* ImageServer.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98B81708F9BDA00047EA9F /* ImageServer.m */; };
+		ED98B83A08F9E9430047EA9F /* NetworkImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98B83908F9E9430047EA9F /* NetworkImageSource.m */; };
+		ED9AF7910A3B83850019A3CA /* scheduled.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9AF7900A3B83850019A3CA /* scheduled.png */; };
+		ED9F096E09AF773600262430 /* NSString+extras.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F096809AF773600262430 /* NSString+extras.m */; };
+		ED9F096F09AF773600262430 /* RSS.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F096A09AF773600262430 /* RSS.m */; };
+		ED9F097009AF773600262430 /* Sparkle.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED9F096B09AF773600262430 /* Sparkle.strings */; };
+		ED9F097109AF773600262430 /* SUUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F096D09AF773600262430 /* SUUpdater.m */; };
+		EDA03BBB09BB7D5600A0F4F4 /* Gawker Help in Resources */ = {isa = PBXBuildFile; fileRef = EDA03BB709BB7D5600A0F4F4 /* Gawker Help */; };
+		EDA239C2098AE15C003770E2 /* CameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA239C1098AE15C003770E2 /* CameraView.m */; };
+		EDA3FB51089468D4003E858E /* MainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FB50089468D4003E858E /* MainWindow.m */; };
+		EDA3FB6308946A12003E858E /* LocalCamera.nib in Resources */ = {isa = PBXBuildFile; fileRef = EDA3FB6108946A12003E858E /* LocalCamera.nib */; };
+		EDA90D2C096CC09800D5B484 /* CombinedCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA90D2B096CC09800D5B484 /* CombinedCameraController.m */; };
+		EDA90D37096CCA7300D5B484 /* CombinedCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA90D36096CCA7300D5B484 /* CombinedCamera.m */; };
+		EDAB8BB0088227C80030C1ED /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB8BAE088227C80030C1ED /* Preferences.nib */; };
+		EDAB8BB5088228030030C1ED /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAB8BB4088228030030C1ED /* PreferenceController.m */; };
+		EDAB8BBB0882286C0030C1ED /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAB8BBA0882286C0030C1ED /* AppController.m */; };
+		EDBE39E808A30E47006AFB9E /* LocalCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBE39E708A30E47006AFB9E /* LocalCamera.m */; };
+		EDC9C77B0985E22C00A2ACA0 /* iSight.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC9C77A0985E22C00A2ACA0 /* iSight.png */; };
+		EDCCB02708B03D0F00B1847A /* ImageText.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCCB02608B03D0F00B1847A /* ImageText.m */; };
+		EDCEBA6D096FDEB200E44CC1 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCEBA6C096FDEB200E44CC1 /* Camera.m */; };
+		EDCEBABF096FED8D00E44CC1 /* internet.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCEBABE096FED8D00E44CC1 /* internet.png */; };
+		EDCEBACA096FF14C00E44CC1 /* recording.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCEBAC9096FF14C00E44CC1 /* recording.png */; };
+		EDCEBCAB08E624930060C2DE /* title.icns in Resources */ = {isa = PBXBuildFile; fileRef = EDCEBCAA08E624930060C2DE /* title.icns */; };
+		EDD070920931911F00A27262 /* BonjourCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD070910931911F00A27262 /* BonjourCamera.m */; };
+		EDE4D3BD099FDAC600E4C541 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE4D3BC099FDAC600E4C541 /* AboutController.m */; };
+		EDE871E608CB8CD0002D31B6 /* CameraImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE871E508CB8CD0002D31B6 /* CameraImageCell.m */; };
+		EDE927AF09704C8300EB0395 /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = EDE927AE09704C8300EB0395 /* connect.png */; };
+		EDEF71AA0A1ADE9800814653 /* CameraPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEF71A90A1ADE9800814653 /* CameraPreferences.m */; };
+		EDF0C13808E565B5003F82BF /* action.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EDF0C13708E565B5003F82BF /* action.tiff */; };
+		EDF542C709BE86E80024F617 /* ScreenImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF542C609BE86E80024F617 /* ScreenImageSource.m */; };
+		EDF542CC09BE8C120024F617 /* ScreenCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF542CB09BE8C120024F617 /* ScreenCameraController.m */; };
+		EDF542D409BE8FF40024F617 /* ScreenCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF542D309BE8FF40024F617 /* ScreenCamera.m */; };
+		EDF542DA09BE92010024F617 /* ScreenCamera.nib in Resources */ = {isa = PBXBuildFile; fileRef = EDF542D809BE92010024F617 /* ScreenCamera.nib */; };
+		EDF5451608F0D982005943C0 /* CameraMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF5451508F0D982005943C0 /* CameraMenuButton.m */; };
+		EDF8E17108D67BF1009BA072 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF8E17008D67BF1009BA072 /* black.png */; };
+		EDF8E17908D67DF0009BA072 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF8E17808D67DF0009BA072 /* white.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Gawker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gawker_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Gawker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gawker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED00CEED08E6067900A00DFE /* InternetComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternetComboBox.h; sourceTree = "<group>"; };
+		ED00CEEE08E6067900A00DFE /* InternetComboBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternetComboBox.m; sourceTree = "<group>"; };
+		ED0D96A50A14C1E0001FC6CF /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
+		ED0D96A60A14C1E0001FC6CF /* CameraManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CameraManager.m; sourceTree = "<group>"; };
+		ED0F5A4D092844EB00BF1A41 /* BonjourImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonjourImageSource.h; sourceTree = "<group>"; };
+		ED0F5A4E092844EB00BF1A41 /* BonjourImageSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonjourImageSource.m; sourceTree = "<group>"; };
+		ED1066DE0A15947A0035B803 /* CombinedCameraScreenComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinedCameraScreenComponent.h; sourceTree = "<group>"; };
+		ED1066DF0A15947A0035B803 /* CombinedCameraScreenComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinedCameraScreenComponent.m; sourceTree = "<group>"; };
+		ED1067020A15A2010035B803 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		ED13DBB009C1444E0001E12C /* window_nib.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = window_nib.tiff; sourceTree = "<group>"; };
+		ED13DBC009C148860001E12C /* desktop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desktop.png; sourceTree = "<group>"; };
+		ED177EA50960AF7200E0B070 /* SharePreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharePreferenceController.h; sourceTree = "<group>"; };
+		ED177EA60960AF7200E0B070 /* SharePreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharePreferenceController.m; sourceTree = "<group>"; };
+		ED1A217909A55BDE00746CE6 /* CombinedCameraComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinedCameraComponent.h; sourceTree = "<group>"; };
+		ED1A217F09A55E4900746CE6 /* CombinedCameraLocalComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinedCameraLocalComponent.h; sourceTree = "<group>"; };
+		ED1A218009A55E4900746CE6 /* CombinedCameraLocalComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinedCameraLocalComponent.m; sourceTree = "<group>"; };
+		ED1A218509A5619A00746CE6 /* CombinedCameraNetworkComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinedCameraNetworkComponent.h; sourceTree = "<group>"; };
+		ED1A218609A5619A00746CE6 /* CombinedCameraNetworkComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinedCameraNetworkComponent.m; sourceTree = "<group>"; };
+		ED244468098B3589007DC3A9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/NetworkCamera.nib; sourceTree = "<group>"; };
+		ED24446F098B359B007DC3A9 /* NetworkCamera.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NetworkCamera.h; sourceTree = "<group>"; };
+		ED244470098B359B007DC3A9 /* NetworkCamera.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NetworkCamera.m; sourceTree = "<group>"; };
+		ED36BC8208C02105007D1B2D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		ED371FAE0990885A004E9636 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/AboutPanel.nib; sourceTree = "<group>"; };
+		ED3C05DF08A460F00014BA5B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/CombinedCamera.nib; sourceTree = "<group>"; };
+		ED448D430A3D256600FF445F /* ImageTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransitionView.h; sourceTree = "<group>"; };
+		ED448D440A3D256600FF445F /* ImageTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransitionView.m; sourceTree = "<group>"; };
+		ED448D8F0A3D2CE300FF445F /* CameraStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStatusView.h; sourceTree = "<group>"; };
+		ED448D900A3D2CE300FF445F /* CameraStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraStatusView.m; sourceTree = "<group>"; };
+		ED4D2EF108FB5E4300DC6806 /* NetworkCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCameraController.h; sourceTree = "<group>"; };
+		ED4D2EF208FB5E4300DC6806 /* NetworkCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCameraController.m; sourceTree = "<group>"; };
+		ED4D41090A3E5AEC00477560 /* error.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = error.tiff; sourceTree = "<group>"; };
+		ED4D410B0A3E5AFF00477560 /* camera.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = camera.tiff; sourceTree = "<group>"; };
+		ED4D80E408765BF700212693 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		ED58F5FF089D1E99000352F7 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		ED58F600089D1E99000352F7 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		ED5C98F6087636FF003C1476 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		ED66EBCC08C2213400BD48B7 /* FireWireNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireWireNotifier.h; sourceTree = "<group>"; };
+		ED66EBCD08C2213400BD48B7 /* FireWireNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireWireNotifier.m; sourceTree = "<group>"; };
+		ED6CA2D209146C4800A9BEAC /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		ED7310AB08E4EEE5002E3A09 /* disconnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disconnect.png; sourceTree = "<group>"; };
+		ED76099508E54AE100F4660E /* bonjour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bonjour.png; sourceTree = "<group>"; };
+		ED783AAD098B3BEC00F83D30 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SharePreferences.nib; sourceTree = "<group>"; };
+		ED783AB4098B3C7B00F83D30 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		ED7B8B700988A1EE00AD619C /* ViewTransitioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTransitioner.h; sourceTree = "<group>"; };
+		ED7B8B710988A1EE00AD619C /* ViewTransitioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTransitioner.m; sourceTree = "<group>"; };
+		ED87D1EE09986B14002E8BBE /* USBNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBNotifier.h; sourceTree = "<group>"; };
+		ED87D1EF09986B14002E8BBE /* USBNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBNotifier.m; sourceTree = "<group>"; };
+		ED88BDD8092F24B30077449A /* BonjourCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonjourCameraController.h; sourceTree = "<group>"; };
+		ED88BDD9092F24B30077449A /* BonjourCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonjourCameraController.m; sourceTree = "<group>"; };
+		ED8ED43808A060D8009085AA /* LapseMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LapseMovie.h; sourceTree = "<group>"; };
+		ED8ED43908A060D8009085AA /* LapseMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LapseMovie.m; sourceTree = "<group>"; };
+		ED918AD50A3FC32000C2194A /* CameraStatusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStatusButton.h; sourceTree = "<group>"; };
+		ED918AD60A3FC32000C2194A /* CameraStatusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraStatusButton.m; sourceTree = "<group>"; };
+		ED918B3E0A3FC96000C2194A /* CameraStatusButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStatusButtonCell.h; sourceTree = "<group>"; };
+		ED918B3F0A3FC96000C2194A /* CameraStatusButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraStatusButtonCell.m; sourceTree = "<group>"; };
+		ED984B170A378372003B6602 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/CameraFeatures.nib; sourceTree = "<group>"; };
+		ED984B8E0A37AEEF003B6602 /* CameraFeaturesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFeaturesWindowController.h; sourceTree = "<group>"; };
+		ED984B8F0A37AEEF003B6602 /* CameraFeaturesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraFeaturesWindowController.m; sourceTree = "<group>"; };
+		ED98B37E08F8FCBD0047EA9F /* CameraImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraImageSource.h; sourceTree = "<group>"; };
+		ED98B37F08F8FCBD0047EA9F /* CameraImageSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraImageSource.m; sourceTree = "<group>"; };
+		ED98B3A808F902FA0047EA9F /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		ED98B3A908F902FA0047EA9F /* CameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
+		ED98B3AC08F907470047EA9F /* LocalCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalCameraController.h; sourceTree = "<group>"; };
+		ED98B3AD08F907470047EA9F /* LocalCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalCameraController.m; sourceTree = "<group>"; };
+		ED98B3D008F90C3B0047EA9F /* ImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSource.h; sourceTree = "<group>"; };
+		ED98B81608F9BDA00047EA9F /* ImageServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageServer.h; sourceTree = "<group>"; };
+		ED98B81708F9BDA00047EA9F /* ImageServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageServer.m; sourceTree = "<group>"; };
+		ED98B83808F9E9430047EA9F /* NetworkImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkImageSource.h; sourceTree = "<group>"; };
+		ED98B83908F9E9430047EA9F /* NetworkImageSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkImageSource.m; sourceTree = "<group>"; };
+		ED9AF7900A3B83850019A3CA /* scheduled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scheduled.png; sourceTree = "<group>"; };
+		ED9F096709AF773600262430 /* NSString+extras.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSString+extras.h"; sourceTree = "<group>"; };
+		ED9F096809AF773600262430 /* NSString+extras.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString+extras.m"; sourceTree = "<group>"; };
+		ED9F096909AF773600262430 /* RSS.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RSS.h; sourceTree = "<group>"; };
+		ED9F096A09AF773600262430 /* RSS.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = RSS.m; sourceTree = "<group>"; };
+		ED9F096B09AF773600262430 /* Sparkle.strings */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; path = Sparkle.strings; sourceTree = "<group>"; };
+		ED9F096C09AF773600262430 /* SUUpdater.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SUUpdater.h; sourceTree = "<group>"; };
+		ED9F096D09AF773600262430 /* SUUpdater.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SUUpdater.m; sourceTree = "<group>"; };
+		EDA03BB809BB7D5600A0F4F4 /* English */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English; path = "English.lproj/Gawker Help"; sourceTree = "<group>"; };
+		EDA239C0098AE15C003770E2 /* CameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraView.h; sourceTree = "<group>"; };
+		EDA239C1098AE15C003770E2 /* CameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraView.m; sourceTree = "<group>"; };
+		EDA3FB4F089468D4003E858E /* MainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindow.h; sourceTree = "<group>"; };
+		EDA3FB50089468D4003E858E /* MainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindow.m; sourceTree = "<group>"; };
+		EDA3FB6208946A12003E858E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/LocalCamera.nib; sourceTree = "<group>"; };
+		EDA90D2A096CC09800D5B484 /* CombinedCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinedCameraController.h; sourceTree = "<group>"; };
+		EDA90D2B096CC09800D5B484 /* CombinedCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinedCameraController.m; sourceTree = "<group>"; };
+		EDA90D35096CCA7300D5B484 /* CombinedCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinedCamera.h; sourceTree = "<group>"; };
+		EDA90D36096CCA7300D5B484 /* CombinedCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinedCamera.m; sourceTree = "<group>"; };
+		EDAB8BAF088227C80030C1ED /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
+		EDAB8BB3088228030030C1ED /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		EDAB8BB4088228030030C1ED /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		EDAB8BB90882286C0030C1ED /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		EDAB8BBA0882286C0030C1ED /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		EDBE39E608A30E47006AFB9E /* LocalCamera.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = LocalCamera.h; sourceTree = "<group>"; };
+		EDBE39E708A30E47006AFB9E /* LocalCamera.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LocalCamera.m; sourceTree = "<group>"; };
+		EDC9C77A0985E22C00A2ACA0 /* iSight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iSight.png; sourceTree = "<group>"; };
+		EDCCB02508B03D0F00B1847A /* ImageText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageText.h; sourceTree = "<group>"; };
+		EDCCB02608B03D0F00B1847A /* ImageText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageText.m; sourceTree = "<group>"; };
+		EDCEBA6B096FDEB200E44CC1 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		EDCEBA6C096FDEB200E44CC1 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		EDCEBABE096FED8D00E44CC1 /* internet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = internet.png; sourceTree = "<group>"; };
+		EDCEBAC9096FF14C00E44CC1 /* recording.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recording.png; sourceTree = "<group>"; };
+		EDCEBCAA08E624930060C2DE /* title.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = title.icns; sourceTree = "<group>"; };
+		EDD070900931911F00A27262 /* BonjourCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonjourCamera.h; sourceTree = "<group>"; };
+		EDD070910931911F00A27262 /* BonjourCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonjourCamera.m; sourceTree = "<group>"; };
+		EDE4D3BB099FDAC600E4C541 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		EDE4D3BC099FDAC600E4C541 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		EDE871E408CB8CD0002D31B6 /* CameraImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraImageCell.h; sourceTree = "<group>"; };
+		EDE871E508CB8CD0002D31B6 /* CameraImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraImageCell.m; sourceTree = "<group>"; };
+		EDE927AE09704C8300EB0395 /* connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect.png; sourceTree = "<group>"; };
+		EDEF71A80A1ADE9800814653 /* CameraPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraPreferences.h; sourceTree = "<group>"; };
+		EDEF71A90A1ADE9800814653 /* CameraPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraPreferences.m; sourceTree = "<group>"; };
+		EDF0C13708E565B5003F82BF /* action.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = action.tiff; sourceTree = "<group>"; };
+		EDF542C509BE86E80024F617 /* ScreenImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenImageSource.h; sourceTree = "<group>"; };
+		EDF542C609BE86E80024F617 /* ScreenImageSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenImageSource.m; sourceTree = "<group>"; };
+		EDF542CA09BE8C120024F617 /* ScreenCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenCameraController.h; sourceTree = "<group>"; };
+		EDF542CB09BE8C120024F617 /* ScreenCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenCameraController.m; sourceTree = "<group>"; };
+		EDF542D209BE8FF40024F617 /* ScreenCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenCamera.h; sourceTree = "<group>"; };
+		EDF542D309BE8FF40024F617 /* ScreenCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenCamera.m; sourceTree = "<group>"; };
+		EDF542D909BE92010024F617 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ScreenCamera.nib; sourceTree = "<group>"; };
+		EDF5451408F0D982005943C0 /* CameraMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraMenuButton.h; sourceTree = "<group>"; };
+		EDF5451508F0D982005943C0 /* CameraMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraMenuButton.m; sourceTree = "<group>"; };
+		EDF8E17008D67BF1009BA072 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
+		EDF8E17808D67DF0009BA072 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				ED5C98F7087636FF003C1476 /* QuickTime.framework in Frameworks */,
+				ED4D80E508765BF700212693 /* QTKit.framework in Frameworks */,
+				ED36BC8308C02105007D1B2D /* IOKit.framework in Frameworks */,
+				ED6CA2D309146C4800A9BEAC /* Carbon.framework in Frameworks */,
+				ED1067150A15A2010035B803 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ED98B81508F9BD890047EA9F /* ImageServer */,
+				ED98B3A508F902D90047EA9F /* CameraControllers */,
+				ED2D89FF09AFBD2A001D2134 /* CombinedCameraComponents */,
+				ED98B37D08F8FCA80047EA9F /* ImageSources */,
+				ED0A21F408C5520E004747DF /* UI */,
+				ED42A8E108AF381C00AE7FFD /* Firewire */,
+				ED87D1ED09986AFF002E8BBE /* USB */,
+				ED82842408A4260600328C80 /* Cameras */,
+				ED82842608A4263400328C80 /* Movie */,
+				EDA3FB4F089468D4003E858E /* MainWindow.h */,
+				EDA3FB50089468D4003E858E /* MainWindow.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED1067020A15A2010035B803 /* OpenGL.framework */,
+				ED6CA2D209146C4800A9BEAC /* Carbon.framework */,
+				ED36BC8208C02105007D1B2D /* IOKit.framework */,
+				ED4D80E408765BF700212693 /* QTKit.framework */,
+				ED5C98F6087636FF003C1476 /* QuickTime.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Gawker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Gawker */ = {
+			isa = PBXGroup;
+			children = (
+				ED783AB4098B3C7B00F83D30 /* License.txt */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Gawker;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ED9F096609AF773600262430 /* Sparkle */,
+				32CA4F630368D1EE00C91783 /* Gawker_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDA03BB709BB7D5600A0F4F4 /* Gawker Help */,
+				ED0B621C08D417EF00A8716E /* Icons */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				ED371FAD0990885A004E9636 /* AboutPanel.nib */,
+				EDAB8BAE088227C80030C1ED /* Preferences.nib */,
+				ED783AAC098B3BEC00F83D30 /* SharePreferences.nib */,
+				EDA3FB6108946A12003E858E /* LocalCamera.nib */,
+				ED244467098B3589007DC3A9 /* NetworkCamera.nib */,
+				ED3C05DE08A460F00014BA5B /* CombinedCamera.nib */,
+				EDF542D809BE92010024F617 /* ScreenCamera.nib */,
+				ED984B160A378372003B6602 /* CameraFeatures.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED0A21F408C5520E004747DF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EDE871E408CB8CD0002D31B6 /* CameraImageCell.h */,
+				EDE871E508CB8CD0002D31B6 /* CameraImageCell.m */,
+				EDAB8BB90882286C0030C1ED /* AppController.h */,
+				EDAB8BBA0882286C0030C1ED /* AppController.m */,
+				EDE4D3BB099FDAC600E4C541 /* AboutController.h */,
+				EDE4D3BC099FDAC600E4C541 /* AboutController.m */,
+				EDAB8BB3088228030030C1ED /* PreferenceController.h */,
+				EDAB8BB4088228030030C1ED /* PreferenceController.m */,
+				ED177EA50960AF7200E0B070 /* SharePreferenceController.h */,
+				ED177EA60960AF7200E0B070 /* SharePreferenceController.m */,
+				ED00CEED08E6067900A00DFE /* InternetComboBox.h */,
+				ED00CEEE08E6067900A00DFE /* InternetComboBox.m */,
+				EDF5451408F0D982005943C0 /* CameraMenuButton.h */,
+				EDF5451508F0D982005943C0 /* CameraMenuButton.m */,
+				ED7B8B700988A1EE00AD619C /* ViewTransitioner.h */,
+				ED7B8B710988A1EE00AD619C /* ViewTransitioner.m */,
+				EDA239C0098AE15C003770E2 /* CameraView.h */,
+				EDA239C1098AE15C003770E2 /* CameraView.m */,
+				EDCCB02508B03D0F00B1847A /* ImageText.h */,
+				EDCCB02608B03D0F00B1847A /* ImageText.m */,
+				EDEF71A80A1ADE9800814653 /* CameraPreferences.h */,
+				EDEF71A90A1ADE9800814653 /* CameraPreferences.m */,
+				ED984B8E0A37AEEF003B6602 /* CameraFeaturesWindowController.h */,
+				ED984B8F0A37AEEF003B6602 /* CameraFeaturesWindowController.m */,
+				ED448D430A3D256600FF445F /* ImageTransitionView.h */,
+				ED448D440A3D256600FF445F /* ImageTransitionView.m */,
+				ED448D8F0A3D2CE300FF445F /* CameraStatusView.h */,
+				ED448D900A3D2CE300FF445F /* CameraStatusView.m */,
+				ED918AD50A3FC32000C2194A /* CameraStatusButton.h */,
+				ED918AD60A3FC32000C2194A /* CameraStatusButton.m */,
+				ED918B3E0A3FC96000C2194A /* CameraStatusButtonCell.h */,
+				ED918B3F0A3FC96000C2194A /* CameraStatusButtonCell.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		ED0B621C08D417EF00A8716E /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				EDCEBCAA08E624930060C2DE /* title.icns */,
+				EDF0C13708E565B5003F82BF /* action.tiff */,
+				ED76099508E54AE100F4660E /* bonjour.png */,
+				EDCEBABE096FED8D00E44CC1 /* internet.png */,
+				EDC9C77A0985E22C00A2ACA0 /* iSight.png */,
+				ED4D410B0A3E5AFF00477560 /* camera.tiff */,
+				EDE927AE09704C8300EB0395 /* connect.png */,
+				ED7310AB08E4EEE5002E3A09 /* disconnect.png */,
+				EDCEBAC9096FF14C00E44CC1 /* recording.png */,
+				ED13DBB009C1444E0001E12C /* window_nib.tiff */,
+				ED13DBC009C148860001E12C /* desktop.png */,
+				EDF8E17008D67BF1009BA072 /* black.png */,
+				EDF8E17808D67DF0009BA072 /* white.png */,
+				ED9AF7900A3B83850019A3CA /* scheduled.png */,
+				ED4D41090A3E5AEC00477560 /* error.tiff */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		ED2D89FF09AFBD2A001D2134 /* CombinedCameraComponents */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A217909A55BDE00746CE6 /* CombinedCameraComponent.h */,
+				ED1A217F09A55E4900746CE6 /* CombinedCameraLocalComponent.h */,
+				ED1A218009A55E4900746CE6 /* CombinedCameraLocalComponent.m */,
+				ED1A218509A5619A00746CE6 /* CombinedCameraNetworkComponent.h */,
+				ED1A218609A5619A00746CE6 /* CombinedCameraNetworkComponent.m */,
+				ED1066DE0A15947A0035B803 /* CombinedCameraScreenComponent.h */,
+				ED1066DF0A15947A0035B803 /* CombinedCameraScreenComponent.m */,
+			);
+			name = CombinedCameraComponents;
+			sourceTree = "<group>";
+		};
+		ED42A8E108AF381C00AE7FFD /* Firewire */ = {
+			isa = PBXGroup;
+			children = (
+				ED66EBCC08C2213400BD48B7 /* FireWireNotifier.h */,
+				ED66EBCD08C2213400BD48B7 /* FireWireNotifier.m */,
+			);
+			name = Firewire;
+			sourceTree = "<group>";
+		};
+		ED82842408A4260600328C80 /* Cameras */ = {
+			isa = PBXGroup;
+			children = (
+				EDCEBA6B096FDEB200E44CC1 /* Camera.h */,
+				EDCEBA6C096FDEB200E44CC1 /* Camera.m */,
+				EDBE39E608A30E47006AFB9E /* LocalCamera.h */,
+				EDBE39E708A30E47006AFB9E /* LocalCamera.m */,
+				ED24446F098B359B007DC3A9 /* NetworkCamera.h */,
+				ED244470098B359B007DC3A9 /* NetworkCamera.m */,
+				EDD070900931911F00A27262 /* BonjourCamera.h */,
+				EDD070910931911F00A27262 /* BonjourCamera.m */,
+				EDA90D35096CCA7300D5B484 /* CombinedCamera.h */,
+				EDA90D36096CCA7300D5B484 /* CombinedCamera.m */,
+				EDF542D209BE8FF40024F617 /* ScreenCamera.h */,
+				EDF542D309BE8FF40024F617 /* ScreenCamera.m */,
+			);
+			name = Cameras;
+			sourceTree = "<group>";
+		};
+		ED82842608A4263400328C80 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				ED8ED43808A060D8009085AA /* LapseMovie.h */,
+				ED8ED43908A060D8009085AA /* LapseMovie.m */,
+			);
+			name = Movie;
+			sourceTree = "<group>";
+		};
+		ED87D1ED09986AFF002E8BBE /* USB */ = {
+			isa = PBXGroup;
+			children = (
+				ED87D1EE09986B14002E8BBE /* USBNotifier.h */,
+				ED87D1EF09986B14002E8BBE /* USBNotifier.m */,
+			);
+			name = USB;
+			sourceTree = "<group>";
+		};
+		ED98B37D08F8FCA80047EA9F /* ImageSources */ = {
+			isa = PBXGroup;
+			children = (
+				ED0D96A50A14C1E0001FC6CF /* CameraManager.h */,
+				ED0D96A60A14C1E0001FC6CF /* CameraManager.m */,
+				ED98B3D008F90C3B0047EA9F /* ImageSource.h */,
+				ED98B37E08F8FCBD0047EA9F /* CameraImageSource.h */,
+				ED98B37F08F8FCBD0047EA9F /* CameraImageSource.m */,
+				ED98B83808F9E9430047EA9F /* NetworkImageSource.h */,
+				ED98B83908F9E9430047EA9F /* NetworkImageSource.m */,
+				ED0F5A4D092844EB00BF1A41 /* BonjourImageSource.h */,
+				ED0F5A4E092844EB00BF1A41 /* BonjourImageSource.m */,
+				EDF542C509BE86E80024F617 /* ScreenImageSource.h */,
+				EDF542C609BE86E80024F617 /* ScreenImageSource.m */,
+			);
+			name = ImageSources;
+			sourceTree = "<group>";
+		};
+		ED98B3A508F902D90047EA9F /* CameraControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED98B3A808F902FA0047EA9F /* CameraController.h */,
+				ED98B3A908F902FA0047EA9F /* CameraController.m */,
+				ED98B3AC08F907470047EA9F /* LocalCameraController.h */,
+				ED98B3AD08F907470047EA9F /* LocalCameraController.m */,
+				ED4D2EF108FB5E4300DC6806 /* NetworkCameraController.h */,
+				ED4D2EF208FB5E4300DC6806 /* NetworkCameraController.m */,
+				ED88BDD8092F24B30077449A /* BonjourCameraController.h */,
+				ED88BDD9092F24B30077449A /* BonjourCameraController.m */,
+				EDA90D2A096CC09800D5B484 /* CombinedCameraController.h */,
+				EDA90D2B096CC09800D5B484 /* CombinedCameraController.m */,
+				EDF542CA09BE8C120024F617 /* ScreenCameraController.h */,
+				EDF542CB09BE8C120024F617 /* ScreenCameraController.m */,
+			);
+			name = CameraControllers;
+			sourceTree = "<group>";
+		};
+		ED98B81508F9BD890047EA9F /* ImageServer */ = {
+			isa = PBXGroup;
+			children = (
+				ED98B81608F9BDA00047EA9F /* ImageServer.h */,
+				ED98B81708F9BDA00047EA9F /* ImageServer.m */,
+				ED58F5FF089D1E99000352F7 /* AsyncSocket.m */,
+				ED58F600089D1E99000352F7 /* AsyncSocket.h */,
+			);
+			name = ImageServer;
+			sourceTree = "<group>";
+		};
+		ED9F096609AF773600262430 /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				ED9F096709AF773600262430 /* NSString+extras.h */,
+				ED9F096809AF773600262430 /* NSString+extras.m */,
+				ED9F096909AF773600262430 /* RSS.h */,
+				ED9F096A09AF773600262430 /* RSS.m */,
+				ED9F096B09AF773600262430 /* Sparkle.strings */,
+				ED9F096C09AF773600262430 /* SUUpdater.h */,
+				ED9F096D09AF773600262430 /* SUUpdater.m */,
+			);
+			path = Sparkle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Gawker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED5C98BE08763692003C1476 /* Build configuration list for PBXNativeTarget "Gawker" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gawker;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Gawker;
+			productReference = 8D1107320486CEB800E47090 /* Gawker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = ED5C98C208763692003C1476 /* Build configuration list for PBXProject "Gawker" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Gawker */;
+			projectDirPath = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Gawker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				EDAB8BB0088227C80030C1ED /* Preferences.nib in Resources */,
+				EDA3FB6308946A12003E858E /* LocalCamera.nib in Resources */,
+				ED3C05E008A460F00014BA5B /* CombinedCamera.nib in Resources */,
+				EDF8E17108D67BF1009BA072 /* black.png in Resources */,
+				EDF8E17908D67DF0009BA072 /* white.png in Resources */,
+				ED7310AC08E4EEE5002E3A09 /* disconnect.png in Resources */,
+				ED76099608E54AE100F4660E /* bonjour.png in Resources */,
+				EDF0C13808E565B5003F82BF /* action.tiff in Resources */,
+				EDCEBCAB08E624930060C2DE /* title.icns in Resources */,
+				EDCEBABF096FED8D00E44CC1 /* internet.png in Resources */,
+				EDCEBACA096FF14C00E44CC1 /* recording.png in Resources */,
+				EDE927AF09704C8300EB0395 /* connect.png in Resources */,
+				EDC9C77B0985E22C00A2ACA0 /* iSight.png in Resources */,
+				ED24446E098B3589007DC3A9 /* NetworkCamera.nib in Resources */,
+				ED783AB2098B3BEC00F83D30 /* SharePreferences.nib in Resources */,
+				ED783AB5098B3C7B00F83D30 /* License.txt in Resources */,
+				ED371FB30990885A004E9636 /* AboutPanel.nib in Resources */,
+				ED9F097009AF773600262430 /* Sparkle.strings in Resources */,
+				EDA03BBB09BB7D5600A0F4F4 /* Gawker Help in Resources */,
+				EDF542DA09BE92010024F617 /* ScreenCamera.nib in Resources */,
+				ED13DBB109C1444E0001E12C /* window_nib.tiff in Resources */,
+				ED13DBC109C148860001E12C /* desktop.png in Resources */,
+				ED984B180A378372003B6602 /* CameraFeatures.nib in Resources */,
+				ED9AF7910A3B83850019A3CA /* scheduled.png in Resources */,
+				ED4D410A0A3E5AEC00477560 /* error.tiff in Resources */,
+				ED4D410C0A3E5AFF00477560 /* camera.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				EDAB8BB5088228030030C1ED /* PreferenceController.m in Sources */,
+				EDAB8BBB0882286C0030C1ED /* AppController.m in Sources */,
+				EDA3FB51089468D4003E858E /* MainWindow.m in Sources */,
+				ED58F601089D1E99000352F7 /* AsyncSocket.m in Sources */,
+				ED8ED43A08A060D8009085AA /* LapseMovie.m in Sources */,
+				EDBE39E808A30E47006AFB9E /* LocalCamera.m in Sources */,
+				EDCCB02708B03D0F00B1847A /* ImageText.m in Sources */,
+				ED66EBCE08C2213400BD48B7 /* FireWireNotifier.m in Sources */,
+				EDE871E608CB8CD0002D31B6 /* CameraImageCell.m in Sources */,
+				ED00CEEF08E6067900A00DFE /* InternetComboBox.m in Sources */,
+				EDF5451608F0D982005943C0 /* CameraMenuButton.m in Sources */,
+				ED98B38008F8FCBD0047EA9F /* CameraImageSource.m in Sources */,
+				ED98B3AA08F902FA0047EA9F /* CameraController.m in Sources */,
+				ED98B3AE08F907470047EA9F /* LocalCameraController.m in Sources */,
+				ED98B81808F9BDA00047EA9F /* ImageServer.m in Sources */,
+				ED98B83A08F9E9430047EA9F /* NetworkImageSource.m in Sources */,
+				ED4D2EF308FB5E4300DC6806 /* NetworkCameraController.m in Sources */,
+				ED0F5A4F092844EB00BF1A41 /* BonjourImageSource.m in Sources */,
+				ED88BDDA092F24B30077449A /* BonjourCameraController.m in Sources */,
+				EDD070920931911F00A27262 /* BonjourCamera.m in Sources */,
+				ED177EA70960AF7200E0B070 /* SharePreferenceController.m in Sources */,
+				EDA90D2C096CC09800D5B484 /* CombinedCameraController.m in Sources */,
+				EDA90D37096CCA7300D5B484 /* CombinedCamera.m in Sources */,
+				EDCEBA6D096FDEB200E44CC1 /* Camera.m in Sources */,
+				ED7B8B720988A1EE00AD619C /* ViewTransitioner.m in Sources */,
+				EDA239C2098AE15C003770E2 /* CameraView.m in Sources */,
+				ED244471098B359B007DC3A9 /* NetworkCamera.m in Sources */,
+				ED87D1F009986B14002E8BBE /* USBNotifier.m in Sources */,
+				EDE4D3BD099FDAC600E4C541 /* AboutController.m in Sources */,
+				ED1A218109A55E4900746CE6 /* CombinedCameraLocalComponent.m in Sources */,
+				ED1A218709A5619A00746CE6 /* CombinedCameraNetworkComponent.m in Sources */,
+				ED9F096E09AF773600262430 /* NSString+extras.m in Sources */,
+				ED9F096F09AF773600262430 /* RSS.m in Sources */,
+				ED9F097109AF773600262430 /* SUUpdater.m in Sources */,
+				EDF542C709BE86E80024F617 /* ScreenImageSource.m in Sources */,
+				EDF542CC09BE8C120024F617 /* ScreenCameraController.m in Sources */,
+				EDF542D409BE8FF40024F617 /* ScreenCamera.m in Sources */,
+				ED0D96A70A14C1E0001FC6CF /* CameraManager.m in Sources */,
+				ED1066E00A15947A0035B803 /* CombinedCameraScreenComponent.m in Sources */,
+				EDEF71AA0A1ADE9800814653 /* CameraPreferences.m in Sources */,
+				ED984B900A37AEEF003B6602 /* CameraFeaturesWindowController.m in Sources */,
+				ED448D450A3D256600FF445F /* ImageTransitionView.m in Sources */,
+				ED448D910A3D2CE300FF445F /* CameraStatusView.m in Sources */,
+				ED918AD70A3FC32000C2194A /* CameraStatusButton.m in Sources */,
+				ED918B400A3FC96000C2194A /* CameraStatusButtonCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		ED244467098B3589007DC3A9 /* NetworkCamera.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED244468098B3589007DC3A9 /* English */,
+			);
+			name = NetworkCamera.nib;
+			sourceTree = "<group>";
+		};
+		ED371FAD0990885A004E9636 /* AboutPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED371FAE0990885A004E9636 /* English */,
+			);
+			name = AboutPanel.nib;
+			sourceTree = "<group>";
+		};
+		ED3C05DE08A460F00014BA5B /* CombinedCamera.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED3C05DF08A460F00014BA5B /* English */,
+			);
+			name = CombinedCamera.nib;
+			sourceTree = "<group>";
+		};
+		ED783AAC098B3BEC00F83D30 /* SharePreferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED783AAD098B3BEC00F83D30 /* English */,
+			);
+			name = SharePreferences.nib;
+			sourceTree = "<group>";
+		};
+		ED984B160A378372003B6602 /* CameraFeatures.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED984B170A378372003B6602 /* English */,
+			);
+			name = CameraFeatures.nib;
+			sourceTree = "<group>";
+		};
+		EDA03BB709BB7D5600A0F4F4 /* Gawker Help */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA03BB809BB7D5600A0F4F4 /* English */,
+			);
+			name = "Gawker Help";
+			sourceTree = "<group>";
+		};
+		EDA3FB6108946A12003E858E /* LocalCamera.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA3FB6208946A12003E858E /* English */,
+			);
+			name = LocalCamera.nib;
+			sourceTree = "<group>";
+		};
+		EDAB8BAE088227C80030C1ED /* Preferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDAB8BAF088227C80030C1ED /* English */,
+			);
+			name = Preferences.nib;
+			sourceTree = "<group>";
+		};
+		EDF542D809BE92010024F617 /* ScreenCamera.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF542D909BE92010024F617 /* English */,
+			);
+			name = ScreenCamera.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED5C98BF08763692003C1476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Gawker_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = Gawker;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		ED5C98C008763692003C1476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Gawker_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = Gawker;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		ED5C98C108763692003C1476 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Gawker_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Gawker;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		ED5C98C308763692003C1476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = "";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		ED5C98C408763692003C1476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = "";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		ED5C98C508763692003C1476 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = "";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				ZERO_LINK = NO;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED5C98BE08763692003C1476 /* Build configuration list for PBXNativeTarget "Gawker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5C98BF08763692003C1476 /* Debug */,
+				ED5C98C008763692003C1476 /* Release */,
+				ED5C98C108763692003C1476 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		ED5C98C208763692003C1476 /* Build configuration list for PBXProject "Gawker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5C98C308763692003C1476 /* Debug */,
+				ED5C98C408763692003C1476 /* Release */,
+				ED5C98C508763692003C1476 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

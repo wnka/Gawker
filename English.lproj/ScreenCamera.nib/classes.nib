@@ -1,0 +1,64 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showCameraFeaturesWindow = id; togglePreview = id; toggleRecord = id; }; 
+            CLASS = Camera; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                camStatusView = CameraStatusView; 
+                imageTransitionView = ImageTransitionView; 
+                moreButton = NSButton; 
+                movieView = QTMovieView; 
+                previewButton = NSButton; 
+                recordButton = NSButton; 
+                saveAccessoryView = NSView; 
+                saveFPS = NSTextField; 
+                saveQuality = NSPopUpButton; 
+                saveSize = NSPopUpButton; 
+                saveTime = NSButton; 
+                timeToNextFrameField = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = CameraView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {camera = id; }; 
+            SUPERCLASS = NSQuickDrawView; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = ImageTransitionView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            CLASS = LocalCamera; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {saveFrameInterval = NSTextField; }; 
+            SUPERCLASS = Camera; 
+        }, 
+        {
+            ACTIONS = {openLocalCamera = id; }; 
+            CLASS = MainWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {openLocalCameraButton = NSButton; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = ScreenCamera; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {saveFrameInterval = NSTextField; }; 
+            SUPERCLASS = Camera; 
+        }, 
+        {
+            ACTIONS = {enableDisable = id; toggleSharing = id; }; 
+            CLASS = TimeLapse; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cameraView = NSImageView; 
+                recordButton = NSButton; 
+                shareButton = NSButton; 
+                waitField = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

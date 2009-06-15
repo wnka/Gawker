@@ -1,0 +1,55 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showAboutPanel = id; showPreferencePanel = id; showSharingPanel = id; }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {aboutPanel = NSWindow; window = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = CameraImageCell; LANGUAGE = ObjC; SUPERCLASS = NSImageCell; }, 
+        {CLASS = CameraMenuButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {CLASS = CameraStatusCell; LANGUAGE = ObjC; SUPERCLASS = NSPopUpButtonCell; }, 
+        {CLASS = CameraTable; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = InternetComboBox; LANGUAGE = ObjC; SUPERCLASS = NSComboBox; }, 
+        {
+            ACTIONS = {
+                clearRecentConnections = id; 
+                deleteCamera = id; 
+                openCamera = id; 
+                openCameraFeatures = id; 
+                openCombinedCamera = id; 
+                openInternetCamera = id; 
+                openSharePrefs = id; 
+                toggleCameraEnabled = id; 
+                toggleCameraShared = id; 
+            }; 
+            CLASS = MainWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                appController = AppController; 
+                availableCamerasTable = NSTableView; 
+                cameraMenu = NSMenu; 
+                internetConnect = NSComboBox; 
+                menuButton = CameraMenuButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            ACTIONS = {checkForUpdates = id; }; 
+            CLASS = SUUpdater; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {enableDisable = id; }; 
+            CLASS = TimeLapse; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {cameraView = NSImageView; recordButton = NSButton; waitField = NSTextField; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}
