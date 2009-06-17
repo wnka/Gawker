@@ -1,55 +1,115 @@
-{
-    IBClasses = (
-        {
-            ACTIONS = {showAboutPanel = id; showPreferencePanel = id; showSharingPanel = id; }; 
-            CLASS = AppController; 
-            LANGUAGE = ObjC; 
-            OUTLETS = {aboutPanel = NSWindow; window = NSWindow; }; 
-            SUPERCLASS = NSObject; 
-        }, 
-        {CLASS = CameraImageCell; LANGUAGE = ObjC; SUPERCLASS = NSImageCell; }, 
-        {CLASS = CameraMenuButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
-        {CLASS = CameraStatusCell; LANGUAGE = ObjC; SUPERCLASS = NSPopUpButtonCell; }, 
-        {CLASS = CameraTable; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
-        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
-        {CLASS = InternetComboBox; LANGUAGE = ObjC; SUPERCLASS = NSComboBox; }, 
-        {
-            ACTIONS = {
-                clearRecentConnections = id; 
-                deleteCamera = id; 
-                openCamera = id; 
-                openCameraFeatures = id; 
-                openCombinedCamera = id; 
-                openInternetCamera = id; 
-                openSharePrefs = id; 
-                toggleCameraEnabled = id; 
-                toggleCameraShared = id; 
-            }; 
-            CLASS = MainWindow; 
-            LANGUAGE = ObjC; 
-            OUTLETS = {
-                appController = AppController; 
-                availableCamerasTable = NSTableView; 
-                cameraMenu = NSMenu; 
-                internetConnect = NSComboBox; 
-                menuButton = CameraMenuButton; 
-            }; 
-            SUPERCLASS = NSObject; 
-        }, 
-        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
-        {
-            ACTIONS = {checkForUpdates = id; }; 
-            CLASS = SUUpdater; 
-            LANGUAGE = ObjC; 
-            SUPERCLASS = NSObject; 
-        }, 
-        {
-            ACTIONS = {enableDisable = id; }; 
-            CLASS = TimeLapse; 
-            LANGUAGE = ObjC; 
-            OUTLETS = {cameraView = NSImageView; recordButton = NSButton; waitField = NSTextField; }; 
-            SUPERCLASS = NSWindowController; 
-        }
-    ); 
-    IBVersion = 1; 
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>CLASS</key>
+			<string>CameraMenuButton</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSButton</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>clearRecentConnections</key>
+				<string>id</string>
+				<key>deleteCamera</key>
+				<string>id</string>
+				<key>openCamera</key>
+				<string>id</string>
+				<key>openCameraFeatures</key>
+				<string>id</string>
+				<key>openCombinedCamera</key>
+				<string>id</string>
+				<key>openInternetCamera</key>
+				<string>id</string>
+				<key>openSharePrefs</key>
+				<string>id</string>
+				<key>toggleCameraEnabled</key>
+				<string>id</string>
+				<key>toggleCameraShared</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>MainWindow</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>appController</key>
+				<string>AppController</string>
+				<key>availableCamerasTable</key>
+				<string>NSTableView</string>
+				<key>cameraMenu</key>
+				<string>NSMenu</string>
+				<key>internetConnect</key>
+				<string>NSComboBox</string>
+				<key>menuButton</key>
+				<string>CameraMenuButton</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>CameraImageCell</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSImageCell</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>NSObject</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>InternetComboBox</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSComboBox</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>showAboutPanel</key>
+				<string>id</string>
+				<key>showPreferencePanel</key>
+				<string>id</string>
+				<key>showSharingPanel</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>AppController</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>aboutPanel</key>
+				<string>NSWindow</string>
+				<key>window</key>
+				<string>NSWindow</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>
