@@ -183,8 +183,8 @@ static void swizzleBitmap(NSBitmapImageRep * bitmap);
     CGLPixelFormatAttribute attribs[] = {
         kCGLPFAFullScreen,
         kCGLPFADisplayMask,
-        displayMask,
-        nil
+        (CGLPixelFormatAttribute)0,
+		(CGLPixelFormatAttribute)0
     };
         
     float screenWidth = [screen frame].size.width;
