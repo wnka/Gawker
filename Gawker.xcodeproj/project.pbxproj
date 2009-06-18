@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BD6E56100FEA06B500D20C8E /* AboutPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6E55FE0FEA06B500D20C8E /* AboutPanel.xib */; };
+		BD6E56110FEA06B500D20C8E /* CameraFeatures.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6E56000FEA06B500D20C8E /* CameraFeatures.xib */; };
+		BD6E56120FEA06B500D20C8E /* CombinedCamera.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6E56020FEA06B500D20C8E /* CombinedCamera.xib */; };
+		BD6E56130FEA06B500D20C8E /* LocalCamera.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6E56040FEA06B500D20C8E /* LocalCamera.xib */; };
+		BD6E56140FEA06B500D20C8E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6E56060FEA06B500D20C8E /* MainMenu.xib */; };
+		BD6E56150FEA06B500D20C8E /* NetworkCamera.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6E56080FEA06B500D20C8E /* NetworkCamera.xib */; };
+		BD6E56160FEA06B500D20C8E /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6E560A0FEA06B500D20C8E /* Preferences.xib */; };
+		BD6E56170FEA06B500D20C8E /* ScreenCamera.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6E560C0FEA06B500D20C8E /* ScreenCamera.xib */; };
+		BD6E56180FEA06B500D20C8E /* SharePreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6E560E0FEA06B500D20C8E /* SharePreferences.xib */; };
 		ED00CEEF08E6067900A00DFE /* InternetComboBox.m in Sources */ = {isa = PBXBuildFile; fileRef = ED00CEEE08E6067900A00DFE /* InternetComboBox.m */; };
 		ED0D96A70A14C1E0001FC6CF /* CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D96A60A14C1E0001FC6CF /* CameraManager.m */; };
 		ED0F5A4F092844EB00BF1A41 /* BonjourImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0F5A4E092844EB00BF1A41 /* BonjourImageSource.m */; };
@@ -21,11 +29,8 @@
 		ED177EA70960AF7200E0B070 /* SharePreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED177EA60960AF7200E0B070 /* SharePreferenceController.m */; };
 		ED1A218109A55E4900746CE6 /* CombinedCameraLocalComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1A218009A55E4900746CE6 /* CombinedCameraLocalComponent.m */; };
 		ED1A218709A5619A00746CE6 /* CombinedCameraNetworkComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1A218609A5619A00746CE6 /* CombinedCameraNetworkComponent.m */; };
-		ED24446E098B3589007DC3A9 /* NetworkCamera.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED244467098B3589007DC3A9 /* NetworkCamera.nib */; };
 		ED244471098B359B007DC3A9 /* NetworkCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = ED244470098B359B007DC3A9 /* NetworkCamera.m */; };
 		ED36BC8308C02105007D1B2D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED36BC8208C02105007D1B2D /* IOKit.framework */; };
-		ED371FB30990885A004E9636 /* AboutPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED371FAD0990885A004E9636 /* AboutPanel.nib */; };
-		ED3C05E008A460F00014BA5B /* CombinedCamera.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED3C05DE08A460F00014BA5B /* CombinedCamera.nib */; };
 		ED448D450A3D256600FF445F /* ImageTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED448D440A3D256600FF445F /* ImageTransitionView.m */; };
 		ED448D910A3D2CE300FF445F /* CameraStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED448D900A3D2CE300FF445F /* CameraStatusView.m */; };
 		ED4D2EF308FB5E4300DC6806 /* NetworkCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4D2EF208FB5E4300DC6806 /* NetworkCameraController.m */; };
@@ -38,7 +43,6 @@
 		ED6CA2D309146C4800A9BEAC /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6CA2D209146C4800A9BEAC /* Carbon.framework */; };
 		ED7310AC08E4EEE5002E3A09 /* disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7310AB08E4EEE5002E3A09 /* disconnect.png */; };
 		ED76099608E54AE100F4660E /* bonjour.png in Resources */ = {isa = PBXBuildFile; fileRef = ED76099508E54AE100F4660E /* bonjour.png */; };
-		ED783AB2098B3BEC00F83D30 /* SharePreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED783AAC098B3BEC00F83D30 /* SharePreferences.nib */; };
 		ED783AB5098B3C7B00F83D30 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED783AB4098B3C7B00F83D30 /* License.txt */; };
 		ED7B8B720988A1EE00AD619C /* ViewTransitioner.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B8B710988A1EE00AD619C /* ViewTransitioner.m */; };
 		ED87D1F009986B14002E8BBE /* USBNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87D1EF09986B14002E8BBE /* USBNotifier.m */; };
@@ -46,7 +50,6 @@
 		ED8ED43A08A060D8009085AA /* LapseMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED43908A060D8009085AA /* LapseMovie.m */; };
 		ED918AD70A3FC32000C2194A /* CameraStatusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED918AD60A3FC32000C2194A /* CameraStatusButton.m */; };
 		ED918B400A3FC96000C2194A /* CameraStatusButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED918B3F0A3FC96000C2194A /* CameraStatusButtonCell.m */; };
-		ED984B180A378372003B6602 /* CameraFeatures.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED984B160A378372003B6602 /* CameraFeatures.nib */; };
 		ED984B900A37AEEF003B6602 /* CameraFeaturesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED984B8F0A37AEEF003B6602 /* CameraFeaturesWindowController.m */; };
 		ED98B38008F8FCBD0047EA9F /* CameraImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98B37F08F8FCBD0047EA9F /* CameraImageSource.m */; };
 		ED98B3AA08F902FA0047EA9F /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98B3A908F902FA0047EA9F /* CameraController.m */; };
@@ -61,10 +64,8 @@
 		EDA03BBB09BB7D5600A0F4F4 /* Gawker Help in Resources */ = {isa = PBXBuildFile; fileRef = EDA03BB709BB7D5600A0F4F4 /* Gawker Help */; };
 		EDA239C2098AE15C003770E2 /* CameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA239C1098AE15C003770E2 /* CameraView.m */; };
 		EDA3FB51089468D4003E858E /* MainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FB50089468D4003E858E /* MainWindow.m */; };
-		EDA3FB6308946A12003E858E /* LocalCamera.nib in Resources */ = {isa = PBXBuildFile; fileRef = EDA3FB6108946A12003E858E /* LocalCamera.nib */; };
 		EDA90D2C096CC09800D5B484 /* CombinedCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA90D2B096CC09800D5B484 /* CombinedCameraController.m */; };
 		EDA90D37096CCA7300D5B484 /* CombinedCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA90D36096CCA7300D5B484 /* CombinedCamera.m */; };
-		EDAB8BB0088227C80030C1ED /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB8BAE088227C80030C1ED /* Preferences.nib */; };
 		EDAB8BB5088228030030C1ED /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAB8BB4088228030030C1ED /* PreferenceController.m */; };
 		EDAB8BBB0882286C0030C1ED /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAB8BBA0882286C0030C1ED /* AppController.m */; };
 		EDBE39E808A30E47006AFB9E /* LocalCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBE39E708A30E47006AFB9E /* LocalCamera.m */; };
@@ -83,7 +84,6 @@
 		EDF542C709BE86E80024F617 /* ScreenImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF542C609BE86E80024F617 /* ScreenImageSource.m */; };
 		EDF542CC09BE8C120024F617 /* ScreenCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF542CB09BE8C120024F617 /* ScreenCameraController.m */; };
 		EDF542D409BE8FF40024F617 /* ScreenCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF542D309BE8FF40024F617 /* ScreenCamera.m */; };
-		EDF542DA09BE92010024F617 /* ScreenCamera.nib in Resources */ = {isa = PBXBuildFile; fileRef = EDF542D809BE92010024F617 /* ScreenCamera.nib */; };
 		EDF5451608F0D982005943C0 /* CameraMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF5451508F0D982005943C0 /* CameraMenuButton.m */; };
 		EDF8E17108D67BF1009BA072 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF8E17008D67BF1009BA072 /* black.png */; };
 		EDF8E17908D67DF0009BA072 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF8E17808D67DF0009BA072 /* white.png */; };
@@ -93,12 +93,20 @@
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Gawker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gawker_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Gawker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gawker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD6E55FF0FEA06B500D20C8E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/AboutPanel.xib; sourceTree = "<group>"; };
+		BD6E56010FEA06B500D20C8E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/CameraFeatures.xib; sourceTree = "<group>"; };
+		BD6E56030FEA06B500D20C8E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/CombinedCamera.xib; sourceTree = "<group>"; };
+		BD6E56050FEA06B500D20C8E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/LocalCamera.xib; sourceTree = "<group>"; };
+		BD6E56070FEA06B500D20C8E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BD6E56090FEA06B500D20C8E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/NetworkCamera.xib; sourceTree = "<group>"; };
+		BD6E560B0FEA06B500D20C8E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
+		BD6E560D0FEA06B500D20C8E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ScreenCamera.xib; sourceTree = "<group>"; };
+		BD6E560F0FEA06B500D20C8E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/SharePreferences.xib; sourceTree = "<group>"; };
 		ED00CEED08E6067900A00DFE /* InternetComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternetComboBox.h; sourceTree = "<group>"; };
 		ED00CEEE08E6067900A00DFE /* InternetComboBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternetComboBox.m; sourceTree = "<group>"; };
 		ED0D96A50A14C1E0001FC6CF /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
@@ -117,12 +125,9 @@
 		ED1A218009A55E4900746CE6 /* CombinedCameraLocalComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinedCameraLocalComponent.m; sourceTree = "<group>"; };
 		ED1A218509A5619A00746CE6 /* CombinedCameraNetworkComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinedCameraNetworkComponent.h; sourceTree = "<group>"; };
 		ED1A218609A5619A00746CE6 /* CombinedCameraNetworkComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinedCameraNetworkComponent.m; sourceTree = "<group>"; };
-		ED244468098B3589007DC3A9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/NetworkCamera.nib; sourceTree = "<group>"; };
 		ED24446F098B359B007DC3A9 /* NetworkCamera.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NetworkCamera.h; sourceTree = "<group>"; };
 		ED244470098B359B007DC3A9 /* NetworkCamera.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NetworkCamera.m; sourceTree = "<group>"; };
 		ED36BC8208C02105007D1B2D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
-		ED371FAE0990885A004E9636 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/AboutPanel.nib; sourceTree = "<group>"; };
-		ED3C05DF08A460F00014BA5B /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/CombinedCamera.nib; sourceTree = "<group>"; };
 		ED448D430A3D256600FF445F /* ImageTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransitionView.h; sourceTree = "<group>"; };
 		ED448D440A3D256600FF445F /* ImageTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransitionView.m; sourceTree = "<group>"; };
 		ED448D8F0A3D2CE300FF445F /* CameraStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStatusView.h; sourceTree = "<group>"; };
@@ -140,7 +145,6 @@
 		ED6CA2D209146C4800A9BEAC /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		ED7310AB08E4EEE5002E3A09 /* disconnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disconnect.png; sourceTree = "<group>"; };
 		ED76099508E54AE100F4660E /* bonjour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bonjour.png; sourceTree = "<group>"; };
-		ED783AAD098B3BEC00F83D30 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SharePreferences.nib; sourceTree = "<group>"; };
 		ED783AB4098B3C7B00F83D30 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		ED7B8B700988A1EE00AD619C /* ViewTransitioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTransitioner.h; sourceTree = "<group>"; };
 		ED7B8B710988A1EE00AD619C /* ViewTransitioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTransitioner.m; sourceTree = "<group>"; };
@@ -154,7 +158,6 @@
 		ED918AD60A3FC32000C2194A /* CameraStatusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraStatusButton.m; sourceTree = "<group>"; };
 		ED918B3E0A3FC96000C2194A /* CameraStatusButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStatusButtonCell.h; sourceTree = "<group>"; };
 		ED918B3F0A3FC96000C2194A /* CameraStatusButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraStatusButtonCell.m; sourceTree = "<group>"; };
-		ED984B170A378372003B6602 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/CameraFeatures.nib; sourceTree = "<group>"; };
 		ED984B8E0A37AEEF003B6602 /* CameraFeaturesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFeaturesWindowController.h; sourceTree = "<group>"; };
 		ED984B8F0A37AEEF003B6602 /* CameraFeaturesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraFeaturesWindowController.m; sourceTree = "<group>"; };
 		ED98B37E08F8FCBD0047EA9F /* CameraImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraImageSource.h; sourceTree = "<group>"; };
@@ -181,12 +184,10 @@
 		EDA239C1098AE15C003770E2 /* CameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraView.m; sourceTree = "<group>"; };
 		EDA3FB4F089468D4003E858E /* MainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindow.h; sourceTree = "<group>"; };
 		EDA3FB50089468D4003E858E /* MainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindow.m; sourceTree = "<group>"; };
-		EDA3FB6208946A12003E858E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/LocalCamera.nib; sourceTree = "<group>"; };
 		EDA90D2A096CC09800D5B484 /* CombinedCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinedCameraController.h; sourceTree = "<group>"; };
 		EDA90D2B096CC09800D5B484 /* CombinedCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinedCameraController.m; sourceTree = "<group>"; };
 		EDA90D35096CCA7300D5B484 /* CombinedCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinedCamera.h; sourceTree = "<group>"; };
 		EDA90D36096CCA7300D5B484 /* CombinedCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinedCamera.m; sourceTree = "<group>"; };
-		EDAB8BAF088227C80030C1ED /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
 		EDAB8BB3088228030030C1ED /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
 		EDAB8BB4088228030030C1ED /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
 		EDAB8BB90882286C0030C1ED /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -217,7 +218,6 @@
 		EDF542CB09BE8C120024F617 /* ScreenCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenCameraController.m; sourceTree = "<group>"; };
 		EDF542D209BE8FF40024F617 /* ScreenCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenCamera.h; sourceTree = "<group>"; };
 		EDF542D309BE8FF40024F617 /* ScreenCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenCamera.m; sourceTree = "<group>"; };
-		EDF542D909BE92010024F617 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ScreenCamera.nib; sourceTree = "<group>"; };
 		EDF5451408F0D982005943C0 /* CameraMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraMenuButton.h; sourceTree = "<group>"; };
 		EDF5451508F0D982005943C0 /* CameraMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraMenuButton.m; sourceTree = "<group>"; };
 		EDF8E17008D67BF1009BA072 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -315,19 +315,19 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BD6E55FE0FEA06B500D20C8E /* AboutPanel.xib */,
+				BD6E56000FEA06B500D20C8E /* CameraFeatures.xib */,
+				BD6E56020FEA06B500D20C8E /* CombinedCamera.xib */,
+				BD6E56040FEA06B500D20C8E /* LocalCamera.xib */,
+				BD6E56060FEA06B500D20C8E /* MainMenu.xib */,
+				BD6E56080FEA06B500D20C8E /* NetworkCamera.xib */,
+				BD6E560A0FEA06B500D20C8E /* Preferences.xib */,
+				BD6E560C0FEA06B500D20C8E /* ScreenCamera.xib */,
+				BD6E560E0FEA06B500D20C8E /* SharePreferences.xib */,
 				EDA03BB709BB7D5600A0F4F4 /* Gawker Help */,
 				ED0B621C08D417EF00A8716E /* Icons */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
-				ED371FAD0990885A004E9636 /* AboutPanel.nib */,
-				EDAB8BAE088227C80030C1ED /* Preferences.nib */,
-				ED783AAC098B3BEC00F83D30 /* SharePreferences.nib */,
-				EDA3FB6108946A12003E858E /* LocalCamera.nib */,
-				ED244467098B3589007DC3A9 /* NetworkCamera.nib */,
-				ED3C05DE08A460F00014BA5B /* CombinedCamera.nib */,
-				EDF542D809BE92010024F617 /* ScreenCamera.nib */,
-				ED984B160A378372003B6602 /* CameraFeatures.nib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -567,11 +567,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				EDAB8BB0088227C80030C1ED /* Preferences.nib in Resources */,
-				EDA3FB6308946A12003E858E /* LocalCamera.nib in Resources */,
-				ED3C05E008A460F00014BA5B /* CombinedCamera.nib in Resources */,
 				EDF8E17108D67BF1009BA072 /* black.png in Resources */,
 				EDF8E17908D67DF0009BA072 /* white.png in Resources */,
 				ED7310AC08E4EEE5002E3A09 /* disconnect.png in Resources */,
@@ -582,19 +578,23 @@
 				EDCEBACA096FF14C00E44CC1 /* recording.png in Resources */,
 				EDE927AF09704C8300EB0395 /* connect.png in Resources */,
 				EDC9C77B0985E22C00A2ACA0 /* iSight.png in Resources */,
-				ED24446E098B3589007DC3A9 /* NetworkCamera.nib in Resources */,
-				ED783AB2098B3BEC00F83D30 /* SharePreferences.nib in Resources */,
 				ED783AB5098B3C7B00F83D30 /* License.txt in Resources */,
-				ED371FB30990885A004E9636 /* AboutPanel.nib in Resources */,
 				ED9F097009AF773600262430 /* Sparkle.strings in Resources */,
 				EDA03BBB09BB7D5600A0F4F4 /* Gawker Help in Resources */,
-				EDF542DA09BE92010024F617 /* ScreenCamera.nib in Resources */,
 				ED13DBB109C1444E0001E12C /* window_nib.tiff in Resources */,
 				ED13DBC109C148860001E12C /* desktop.png in Resources */,
-				ED984B180A378372003B6602 /* CameraFeatures.nib in Resources */,
 				ED9AF7910A3B83850019A3CA /* scheduled.png in Resources */,
 				ED4D410A0A3E5AEC00477560 /* error.tiff in Resources */,
 				ED4D410C0A3E5AFF00477560 /* camera.tiff in Resources */,
+				BD6E56100FEA06B500D20C8E /* AboutPanel.xib in Resources */,
+				BD6E56110FEA06B500D20C8E /* CameraFeatures.xib in Resources */,
+				BD6E56120FEA06B500D20C8E /* CombinedCamera.xib in Resources */,
+				BD6E56130FEA06B500D20C8E /* LocalCamera.xib in Resources */,
+				BD6E56140FEA06B500D20C8E /* MainMenu.xib in Resources */,
+				BD6E56150FEA06B500D20C8E /* NetworkCamera.xib in Resources */,
+				BD6E56160FEA06B500D20C8E /* Preferences.xib in Resources */,
+				BD6E56170FEA06B500D20C8E /* ScreenCamera.xib in Resources */,
+				BD6E56180FEA06B500D20C8E /* SharePreferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,52 +665,76 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+		BD6E55FE0FEA06B500D20C8E /* AboutPanel.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
+				BD6E55FF0FEA06B500D20C8E /* English */,
 			);
-			name = MainMenu.nib;
+			name = AboutPanel.xib;
 			sourceTree = "<group>";
 		};
-		ED244467098B3589007DC3A9 /* NetworkCamera.nib */ = {
+		BD6E56000FEA06B500D20C8E /* CameraFeatures.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED244468098B3589007DC3A9 /* English */,
+				BD6E56010FEA06B500D20C8E /* English */,
 			);
-			name = NetworkCamera.nib;
+			name = CameraFeatures.xib;
 			sourceTree = "<group>";
 		};
-		ED371FAD0990885A004E9636 /* AboutPanel.nib */ = {
+		BD6E56020FEA06B500D20C8E /* CombinedCamera.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED371FAE0990885A004E9636 /* English */,
+				BD6E56030FEA06B500D20C8E /* English */,
 			);
-			name = AboutPanel.nib;
+			name = CombinedCamera.xib;
 			sourceTree = "<group>";
 		};
-		ED3C05DE08A460F00014BA5B /* CombinedCamera.nib */ = {
+		BD6E56040FEA06B500D20C8E /* LocalCamera.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED3C05DF08A460F00014BA5B /* English */,
+				BD6E56050FEA06B500D20C8E /* English */,
 			);
-			name = CombinedCamera.nib;
+			name = LocalCamera.xib;
 			sourceTree = "<group>";
 		};
-		ED783AAC098B3BEC00F83D30 /* SharePreferences.nib */ = {
+		BD6E56060FEA06B500D20C8E /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED783AAD098B3BEC00F83D30 /* English */,
+				BD6E56070FEA06B500D20C8E /* English */,
 			);
-			name = SharePreferences.nib;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		ED984B160A378372003B6602 /* CameraFeatures.nib */ = {
+		BD6E56080FEA06B500D20C8E /* NetworkCamera.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED984B170A378372003B6602 /* English */,
+				BD6E56090FEA06B500D20C8E /* English */,
 			);
-			name = CameraFeatures.nib;
+			name = NetworkCamera.xib;
+			sourceTree = "<group>";
+		};
+		BD6E560A0FEA06B500D20C8E /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD6E560B0FEA06B500D20C8E /* English */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+		BD6E560C0FEA06B500D20C8E /* ScreenCamera.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD6E560D0FEA06B500D20C8E /* English */,
+			);
+			name = ScreenCamera.xib;
+			sourceTree = "<group>";
+		};
+		BD6E560E0FEA06B500D20C8E /* SharePreferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD6E560F0FEA06B500D20C8E /* English */,
+			);
+			name = SharePreferences.xib;
 			sourceTree = "<group>";
 		};
 		EDA03BB709BB7D5600A0F4F4 /* Gawker Help */ = {
@@ -719,30 +743,6 @@
 				EDA03BB809BB7D5600A0F4F4 /* English */,
 			);
 			name = "Gawker Help";
-			sourceTree = "<group>";
-		};
-		EDA3FB6108946A12003E858E /* LocalCamera.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDA3FB6208946A12003E858E /* English */,
-			);
-			name = LocalCamera.nib;
-			sourceTree = "<group>";
-		};
-		EDAB8BAE088227C80030C1ED /* Preferences.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDAB8BAF088227C80030C1ED /* English */,
-			);
-			name = Preferences.nib;
-			sourceTree = "<group>";
-		};
-		EDF542D809BE92010024F617 /* ScreenCamera.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDF542D909BE92010024F617 /* English */,
-			);
-			name = ScreenCamera.nib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
