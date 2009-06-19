@@ -27,6 +27,6 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
-	<string>&lt;temp removed&gt;</string>
+	<string>http://gawker.sourceforge.net/changelog.xml</string>
 </dict>
 </plist>

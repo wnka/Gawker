@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65A26D620FEC267A005A05EE /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A26D610FEC267A005A05EE /* Sparkle.framework */; };
+		65A26D960FEC2B34005A05EE /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65A26D610FEC267A005A05EE /* Sparkle.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -57,10 +59,6 @@
 		ED98B81808F9BDA00047EA9F /* ImageServer.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98B81708F9BDA00047EA9F /* ImageServer.m */; };
 		ED98B83A08F9E9430047EA9F /* NetworkImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98B83908F9E9430047EA9F /* NetworkImageSource.m */; };
 		ED9AF7910A3B83850019A3CA /* scheduled.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9AF7900A3B83850019A3CA /* scheduled.png */; };
-		ED9F096E09AF773600262430 /* NSString+extras.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F096809AF773600262430 /* NSString+extras.m */; };
-		ED9F096F09AF773600262430 /* RSS.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F096A09AF773600262430 /* RSS.m */; };
-		ED9F097009AF773600262430 /* Sparkle.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED9F096B09AF773600262430 /* Sparkle.strings */; };
-		ED9F097109AF773600262430 /* SUUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F096D09AF773600262430 /* SUUpdater.m */; };
 		EDA03BBB09BB7D5600A0F4F4 /* Gawker Help in Resources */ = {isa = PBXBuildFile; fileRef = EDA03BB709BB7D5600A0F4F4 /* Gawker Help */; };
 		EDA239C2098AE15C003770E2 /* CameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA239C1098AE15C003770E2 /* CameraView.m */; };
 		EDA3FB51089468D4003E858E /* MainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA3FB50089468D4003E858E /* MainWindow.m */; };
@@ -89,6 +87,19 @@
 		EDF8E17908D67DF0009BA072 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF8E17808D67DF0009BA072 /* white.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		65A26D890FEC2A74005A05EE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65A26D960FEC2B34005A05EE /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -96,6 +107,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Gawker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gawker_Prefix.pch; sourceTree = "<group>"; };
+		65A26D610FEC267A005A05EE /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Gawker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gawker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6E55FF0FEA06B500D20C8E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/AboutPanel.xib; sourceTree = "<group>"; };
@@ -172,13 +184,6 @@
 		ED98B83808F9E9430047EA9F /* NetworkImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkImageSource.h; sourceTree = "<group>"; };
 		ED98B83908F9E9430047EA9F /* NetworkImageSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkImageSource.m; sourceTree = "<group>"; };
 		ED9AF7900A3B83850019A3CA /* scheduled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scheduled.png; sourceTree = "<group>"; };
-		ED9F096709AF773600262430 /* NSString+extras.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSString+extras.h"; sourceTree = "<group>"; };
-		ED9F096809AF773600262430 /* NSString+extras.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString+extras.m"; sourceTree = "<group>"; };
-		ED9F096909AF773600262430 /* RSS.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RSS.h; sourceTree = "<group>"; };
-		ED9F096A09AF773600262430 /* RSS.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = RSS.m; sourceTree = "<group>"; };
-		ED9F096B09AF773600262430 /* Sparkle.strings */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; path = Sparkle.strings; sourceTree = "<group>"; };
-		ED9F096C09AF773600262430 /* SUUpdater.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SUUpdater.h; sourceTree = "<group>"; };
-		ED9F096D09AF773600262430 /* SUUpdater.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SUUpdater.m; sourceTree = "<group>"; };
 		EDA03BB809BB7D5600A0F4F4 /* English */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English; path = "English.lproj/Gawker Help"; sourceTree = "<group>"; };
 		EDA239C0098AE15C003770E2 /* CameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraView.h; sourceTree = "<group>"; };
 		EDA239C1098AE15C003770E2 /* CameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraView.m; sourceTree = "<group>"; };
@@ -235,6 +240,7 @@
 				ED36BC8308C02105007D1B2D /* IOKit.framework in Frameworks */,
 				ED6CA2D309146C4800A9BEAC /* Carbon.framework in Frameworks */,
 				ED1067150A15A2010035B803 /* OpenGL.framework in Frameworks */,
+				65A26D620FEC267A005A05EE /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +268,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65A26D610FEC267A005A05EE /* Sparkle.framework */,
 				ED1067020A15A2010035B803 /* OpenGL.framework */,
 				ED6CA2D209146C4800A9BEAC /* Carbon.framework */,
 				ED36BC8208C02105007D1B2D /* IOKit.framework */,
@@ -305,7 +312,6 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				ED9F096609AF773600262430 /* Sparkle */,
 				32CA4F630368D1EE00C91783 /* Gawker_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -510,20 +516,6 @@
 			name = ImageServer;
 			sourceTree = "<group>";
 		};
-		ED9F096609AF773600262430 /* Sparkle */ = {
-			isa = PBXGroup;
-			children = (
-				ED9F096709AF773600262430 /* NSString+extras.h */,
-				ED9F096809AF773600262430 /* NSString+extras.m */,
-				ED9F096909AF773600262430 /* RSS.h */,
-				ED9F096A09AF773600262430 /* RSS.m */,
-				ED9F096B09AF773600262430 /* Sparkle.strings */,
-				ED9F096C09AF773600262430 /* SUUpdater.h */,
-				ED9F096D09AF773600262430 /* SUUpdater.m */,
-			);
-			path = Sparkle;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -534,6 +526,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				65A26D890FEC2A74005A05EE /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -579,7 +572,6 @@
 				EDE927AF09704C8300EB0395 /* connect.png in Resources */,
 				EDC9C77B0985E22C00A2ACA0 /* iSight.png in Resources */,
 				ED783AB5098B3C7B00F83D30 /* License.txt in Resources */,
-				ED9F097009AF773600262430 /* Sparkle.strings in Resources */,
 				EDA03BBB09BB7D5600A0F4F4 /* Gawker Help in Resources */,
 				ED13DBB109C1444E0001E12C /* window_nib.tiff in Resources */,
 				ED13DBC109C148860001E12C /* desktop.png in Resources */,
@@ -637,9 +629,6 @@
 				EDE4D3BD099FDAC600E4C541 /* AboutController.m in Sources */,
 				ED1A218109A55E4900746CE6 /* CombinedCameraLocalComponent.m in Sources */,
 				ED1A218709A5619A00746CE6 /* CombinedCameraNetworkComponent.m in Sources */,
-				ED9F096E09AF773600262430 /* NSString+extras.m in Sources */,
-				ED9F096F09AF773600262430 /* RSS.m in Sources */,
-				ED9F097109AF773600262430 /* SUUpdater.m in Sources */,
 				EDF542C709BE86E80024F617 /* ScreenImageSource.m in Sources */,
 				EDF542CC09BE8C120024F617 /* ScreenCameraController.m in Sources */,
 				EDF542D409BE8FF40024F617 /* ScreenCamera.m in Sources */,
@@ -752,6 +741,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -774,6 +767,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
@@ -793,6 +790,10 @@
 		ED5C98C108763692003C1476 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
