@@ -128,6 +128,7 @@
 	NSLog(@"In LapseMovie -dealloc");
     [movieDict release];
     [outFilename release];
+    [tempFilename release];
 	[movie release];
 	[movieView release];
 	[super dealloc];
