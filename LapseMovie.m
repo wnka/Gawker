@@ -69,15 +69,16 @@
 - (BOOL)createBlankMovie
 {
 	// generate a name for our movie file
-	NSString *tempName = [NSString stringWithCString:tmpnam(nil) 
-                                   encoding:[NSString defaultCStringEncoding]];
+	tempFilename = [[NSString stringWithCString:tmpnam(nil) 
+                         encoding:[NSString defaultCStringEncoding]] retain];
+
 	
 	OSErr   err         = noErr;
 	Handle  dataRefH    = nil;
 	OSType  dataRefType;
 	
 	// create a file data reference for our movie
-	err = QTNewDataReferenceFromFullPathCFString((CFStringRef)tempName,
+	err = QTNewDataReferenceFromFullPathCFString((CFStringRef)tempFilename,
 												 kQTNativeDefaultPathStyle,
 												 0,
 												 &dataRefH,
@@ -177,6 +178,8 @@
         NSFileManager *fileMan = [NSFileManager defaultManager];
         [fileMan removeFileAtPath:outFilename handler:self];
         [fileMan movePath:tempOut toPath:outFilename handler:self];
+        // Remove temporary file created in createBlankMovie
+        [fileMan removeFileAtPath:tempFilename handler:self];
     }
 
 	return success;	
