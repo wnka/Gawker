@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654AC51F0FF1D8CB0051DB5D /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 654AC51E0FF1D8CB0051DB5D /* dsa_pub.pem */; };
 		65A26D620FEC267A005A05EE /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A26D610FEC267A005A05EE /* Sparkle.framework */; };
 		65A26D960FEC2B34005A05EE /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65A26D610FEC267A005A05EE /* Sparkle.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -107,6 +108,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Gawker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gawker_Prefix.pch; sourceTree = "<group>"; };
+		654AC51E0FF1D8CB0051DB5D /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		65A26D610FEC267A005A05EE /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Gawker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gawker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -321,6 +323,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				654AC51E0FF1D8CB0051DB5D /* dsa_pub.pem */,
 				BD6E55FE0FEA06B500D20C8E /* AboutPanel.xib */,
 				BD6E56000FEA06B500D20C8E /* CameraFeatures.xib */,
 				BD6E56020FEA06B500D20C8E /* CombinedCamera.xib */,
@@ -587,6 +590,7 @@
 				BD6E56160FEA06B500D20C8E /* Preferences.xib in Resources */,
 				BD6E56170FEA06B500D20C8E /* ScreenCamera.xib in Resources */,
 				BD6E56180FEA06B500D20C8E /* SharePreferences.xib in Resources */,
+				654AC51F0FF1D8CB0051DB5D /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
