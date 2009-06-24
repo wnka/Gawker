@@ -17,7 +17,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.8.0</string>
+	<string>0.8.1</string>
 	<key>CFBundleHelpBookFolder</key>
 	<string>Gawker Help</string>
 	<key>CFBundleHelpBookName</key>
@@ -27,7 +27,7 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
-	<string>http://gawker.sourceforge.net/changelog.xml</string>
+	<string>http://gawker.sourceforge.net/appcast.xml</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
 </dict>
