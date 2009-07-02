@@ -9,7 +9,7 @@
 #import "PreferenceController.h"
 #import "ImageText.h"
 
-NSString *WNKCheckForUpdatesKey = @"SUCheckAtStartup";
+NSString *WNKCheckForUpdatesKey = @"SUEnableAutomaticChecks";
 NSString *WNKOpenOnConnectKey = @"OpenOnConnect";
 NSString *WNKShowTimeToNextFrameKey = @"ShowTimeToNextFrame";
 NSString *WNKDoFancyTransitionsKey = @"DoFancyTransitions";
