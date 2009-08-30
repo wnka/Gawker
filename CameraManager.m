@@ -57,30 +57,37 @@
             continue;
         }
         
-        // Get the device name.
-        NSString *inputDev = 
-            [NSString stringWithCString:(char *)((*inputList)->entry[inputNum].name + 1)
-                      length:(int)((*inputList)->entry[inputNum].name[0])];
+		int x = 0;
+		for (x = 0; x < ((*inputList)->count); x ++)
+		{
+			
+			// Get the device name.
+			NSString *inputDev = 
+				[NSString stringWithCString:(char *)((*inputList)->entry[x].name + 1)
+						  length:(int)((*inputList)->entry[x].name[0])];
 
-        // Check for a match
-        // If a match is found, set the device and input properly on the
-        // channel.
-        NSLog(@"Found device: %@", inputDev);
-        if ([inputDev isEqual:cameraName]) {
-            NSLog(@"Found the device/input for \"%@\"", cameraName);
-            theErr = SGSetChannelDevice(*channel, (*list)->entry[i].name);
-            if (theErr != noErr) {
-                NSLog(@"SGSetChannelDevice error %ld", theErr);
-                break;
-            }
-            theErr = SGSetChannelDeviceInput(*channel, inputNum);
-            if (theErr != noErr) {
-                NSLog(@"SGSetChannelDeviceInput error %ld", theErr);
-                break;
-            }
-            wasSuccessful = YES;
-            break;
-        }
+			// Check for a match
+			// If a match is found, set the device and input properly on the
+			// channel.
+			NSLog(@"Found device: %@", inputDev);
+			if ([inputDev isEqual:cameraName]) {
+				NSLog(@"Found the device/input for \"%@\"", cameraName);
+				theErr = SGSetChannelDevice(*channel, (*list)->entry[i].name);
+				if (theErr != noErr) {
+					NSLog(@"SGSetChannelDevice error %ld", theErr);
+					break;
+				}
+				theErr = SGSetChannelDeviceInput(*channel, x);
+				if (theErr != noErr) {
+					NSLog(@"SGSetChannelDeviceInput error %ld", theErr);
+					break;
+				}
+				wasSuccessful = YES;
+				break;
+			}
+		}
+		if (wasSuccessful)
+			break;
     }
     
     // Clean up our list
@@ -154,13 +161,19 @@
             // No inputs on this device
             continue;
         }
-        
-        // Get the device name.
-        NSString *inputDev = 
-            [NSString stringWithCString:(char *)((*inputList)->entry[inputNum].name + 1)
-                      length:(int)((*inputList)->entry[inputNum].name[0])];
 
-        [channels addObject:inputDev];
+  
+		int x = 0;
+		for (x = 0; x < ((*inputList)->count); x ++)
+		{
+			
+			// Get the device name.
+			NSString *inputDev = 
+				[NSString stringWithCString:(char *)((*inputList)->entry[x].name + 1)
+						  length:(int)((*inputList)->entry[x].name[0])];
+
+			[channels addObject:inputDev];
+		}
     }
     
     // Clean up our list

@@ -170,6 +170,7 @@ objectValueForTableColumn:(NSTableColumn *)aTableColumn
         }
         [availableCameras insertObject:localCamera atIndex:0];
         [fireWireNotifier watchDeviceForDisconnect:inputName];
+        [usbNotifier watchDeviceForDisconnect:inputName];
         [localCamera release];        
     }
 
@@ -1024,12 +1025,21 @@ objectValueForTableColumn:(NSTableColumn *)aTableColumn
         VideoDigitizerComponent vd2 = OpenComponent(vd);    
         Str255 outname;
 
-        if (noErr != VDGetInputName(vd2, 0, outname)) {
-            continue;
-        }
-        
-        NSString *name = [NSString stringWithCString:(char *)outname+1 length:outname[0]];
-        [theAvailableInputs addObject:name];
+		short count;
+		VDGetNumberOfInputs(vd2, &count);
+		while (count >= 0)
+		{
+			if (noErr != VDGetInputName(vd2, count, outname)) 
+			{
+				count--;
+				continue;
+			}
+			
+			NSString *name = [NSString stringWithCString:(char *)outname+1 length:outname[0]];
+			[theAvailableInputs addObject:name];
+			count--;
+		}
+		
         CloseComponent((ComponentInstance)vd2);
         CloseComponent((ComponentInstance)vd);
     }
