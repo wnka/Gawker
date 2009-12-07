@@ -243,25 +243,32 @@ static void swizzleBitmap(NSBitmapImageRep * bitmap);
     NSData *png = [bitmap representationUsingType:NSPNGFileType properties:nil];
     NSRect fromRect = [screen frame];
     [screenUpdateLock unlock];
-
-    NSImage *screenImage = [[NSImage alloc] initWithData:png];
     
     NSRect scaledRect = NSMakeRect(0, 0, 640, 480);
     fromRect.origin.x = 0;
     fromRect.origin.y = 0;
 
-    NSImage *scaledImage = [[NSImage alloc] initWithSize:scaledRect.size];
-    if (scaledImage) {
-        [scaledImage lockFocus];
-        [screenImage drawInRect:scaledRect
-                     fromRect:fromRect
-                     operation:NSCompositeSourceOver
-                     fraction:1.0];
-        [screenImage unlockFocus];
-    }
-    [screenImage release];
-   
-    return [scaledImage autorelease];
+	// Scale the image, doesn't work pre-Snow Leopard
+	//CGImageRef cgImage = [screenImage CGImageForProposedRect:&scaledRect context:nil hints:nil];
+	//NSImage *scaledImage = [[NSImage alloc] initWithCGImage:cgImage size:scaledRect.size];
+	
+	CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)png, NULL);
+	CGImageRef image = CGImageSourceCreateImageAtIndex(source, 0, NULL);
+	
+    CGContextRef imageContext = nil;
+    NSImage* newImage = nil;
+	
+    // Create a new image to receive the Quartz image data.
+    newImage = [[[NSImage alloc] initWithSize:scaledRect.size] autorelease];
+    [newImage lockFocus];
+	
+    // Get the Quartz context and draw.
+    imageContext = (CGContextRef)[[NSGraphicsContext currentContext]
+								  graphicsPort];
+    CGContextDrawImage(imageContext, *(CGRect*)&scaledRect, image);
+    [newImage unlockFocus];
+	
+    return newImage;
 }
 
 - (void)setRecentImage:(NSImage *)newImage

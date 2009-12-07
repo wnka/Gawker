@@ -540,6 +540,7 @@
     [attString addAttribute:NSShadowAttributeName value:shadow
                   range:range];
     [attString setAlignment:NSRightTextAlignment range:range];
+    [shadow release];
     
     return [attString autorelease];
 }

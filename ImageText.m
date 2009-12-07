@@ -131,6 +131,8 @@ attributes:(NSDictionary *)attributes scaleFactor:(double)scale
     [attribString drawAtPoint:stringOrigin];
     [attribString release];
 
+	[attribCopy release];
+	
     [rnd unlockFocus];
     
     return [rnd autorelease];
