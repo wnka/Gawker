@@ -12,15 +12,6 @@
 #import "ImageSource.h"
 
 @interface ScreenImageSource : NSObject <ImageSource> {
-    CGLContextObj glContextObj;
-
-    NSBitmapImageRep *bitmap;
-    
-    GLint width;
-    GLint height;
-    long bytewidth;
-    long bytes;
-
     BOOL isEnabled;
 
     NSTimeZone *timeZone;
@@ -32,7 +23,6 @@
     NSString *sourceSubDescription;
 
     NSScreen *screen;
-    NSLock *screenUpdateLock;
 }
 
 - (BOOL)start;
