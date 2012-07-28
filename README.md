@@ -10,7 +10,7 @@ combined to create a time-lapse movie with up to four locations side-by-side.
 Contributing
 ------------
 
-I have been actively working on Gawker for a few years now, but I figured I would put it up on GitHub to make it
+I haven't been actively working on Gawker for a few years now, but I figured I would put it up on GitHub to make it
 easier for people to fork and contribute.
 
 License
